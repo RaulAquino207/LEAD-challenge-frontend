@@ -1,0 +1,27 @@
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+    <img width="40" alt="Angular Logo"
+      src="https://jornalistainclusivo.com/wp-content/uploads/2020/06/lead-dell-circulo.png" />
+    <span>Net Promoter Score</span>
+    <div class="spacer"></div>
+  </div>
+  
+  <div class="content" role="main">
+  
+    <!-- Highlight Card -->
+    <div class="card highlight-card card-small">
+  
+      <img width="80" alt="Angular Logo"
+        src="https://jornalistainclusivo.com/wp-content/uploads/2020/06/lead-dell-circulo.png" />
+  
+    </div>
+<form class="app-form" (ngSubmit)="email_submit()">
+    <h2 class="app-form__title">Confirme seu email</h2>
+    <div class="form-field">
+        <label class="form-field__label" for="email"></label>
+        <input class="form-field__input" id="email" type="text" [(ngModel)]="email" name="email">
+    </div>
+    <div class="button-wrapper">
+        <button class="button" type="submit">Quero responder 😃</button>
+    </div>
+</form>
