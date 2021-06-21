@@ -39,7 +39,7 @@
   border-radius: 4px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   &__title {
-    text-transform: capitalize;
+    // text-transform: capitalize;
     color: #125699;
     align-items: center;
     display: flex;
@@ -72,7 +72,7 @@
 .button-wrapper {
     display: flex;
   }
-  
+
   .button {
     background-color:#1976d2;
     color: white;
@@ -84,13 +84,19 @@
     padding: 0.5em;
     cursor: pointer;
     // transition: opacity 0.2s;
-  
+
     &--cancelar {
       background-color: var();
       margin-left: 20px;
     }
-  
+
     &:hover {
       opacity: 0.8;
     }
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }

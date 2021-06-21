@@ -48,6 +48,14 @@
     max-width: 960px;
     flex-direction: column;
     align-items: center;
+
+    &__title {
+        // text-transform: capitalize;
+        color: #125699;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+      }
   }
 
   svg.material-icons {
@@ -111,7 +119,7 @@
 
   .card.highlight-card {
     border-radius: 4px;
-    background-color: #1976d2;
+    // background-color: #1976d2;
     color: white;
     font-weight: 600;
     border: none;
@@ -171,3 +179,45 @@
     opacity: 0.8;
   }
 }
+
+.app-form {
+  background-color: white;
+  padding: 16px;
+  border-radius: 4px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  &__title {
+    text-transform: capitalize;
+    color: #125699;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
+  .form-field {
+    width: 300px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    color: #125699;
+
+    &__label {
+      color: inherit;
+      margin-bottom: 4px;
+      font-size: 12px;
+    }
+
+    &__input {
+      padding: 8px;
+      border-radius: 4px;
+      color: inherit;
+      border: 2px solid;
+      outline: none;
+    }
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }

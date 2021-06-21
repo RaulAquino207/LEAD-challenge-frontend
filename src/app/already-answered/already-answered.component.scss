@@ -6,7 +6,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  
+
   .toolbar {
     position: absolute;
     top: 0;
@@ -19,7 +19,7 @@
     color: white;
     font-weight: 600;
   }
-  
+
   .toolbar img {
     margin: 0 16px;
   }
@@ -33,7 +33,7 @@
     align-items: center;
 
     &__title {
-        text-transform: capitalize;
+        // text-transform: capitalize;
         color: #125699;
         align-items: center;
         display: flex;
@@ -41,21 +41,68 @@
       }
   }
 
+  .button-wrapper {
+    display: flex;
+  }
+
   .button {
-    width: 60px;
-    height: 40px;
     background-color:#1976d2;
     color: white;
     display: block;
-    // flex: 1;
+    flex: 1;
     border: none;
     border-radius: 4px;
     font-size: 16px;
     padding: 0.5em;
     cursor: pointer;
+    margin: 0;
+    text-align:center;
     // transition: opacity 0.2s;
-  
+
+    &--cancelar {
+      background-color: var();
+      margin-left: 20px;
+    }
+
     &:hover {
       opacity: 0.8;
     }
+  }
+
+  // .button {
+  //   width: 60px;
+  //   height: 40px;
+  //   background-color:#1976d2;
+  //   color: white;
+  //   display: block;
+  //   // flex: 1;
+  //   border: none;
+  //   border-radius: 4px;
+  //   font-size: 16px;
+  //   padding: 0.5em;
+  //   cursor: pointer;
+  //   // transition: opacity 0.2s;
+
+  //   &:hover {
+  //     opacity: 0.8;
+  //   }
+  // }
+
+  .app-form {
+    background-color: white;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    &__title {
+      color: #125699;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
