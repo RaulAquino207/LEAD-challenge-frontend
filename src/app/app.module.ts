@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AlreadyAnsweredComponent } from './already-answered/already-answered.component';
 import { AnswerSavedComponent } from './answer-saved/answer-saved.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AnswerSavedComponent } from './answer-saved/answer-saved.component';
     FormNpsComponent,
     FakeInComponent,
     AlreadyAnsweredComponent,
-    AnswerSavedComponent
+    AnswerSavedComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,
