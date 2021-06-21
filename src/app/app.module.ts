@@ -7,12 +7,16 @@ import { FormNpsComponent } from './form-nps/form-nps.component';
 import { FakeInComponent } from './fake-in/fake-in.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { AlreadyAnsweredComponent } from './already-answered/already-answered.component';
+import { AnswerSavedComponent } from './answer-saved/answer-saved.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormNpsComponent,
-    FakeInComponent
+    FakeInComponent,
+    AlreadyAnsweredComponent,
+    AnswerSavedComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { FormServiceService } from '../services/form-service.service';
 
 @Component({
   selector: 'app-fake-in',
@@ -7,14 +8,28 @@ import { Router } from '@angular/router';
   styleUrls: ['./fake-in.component.scss']
 })
 export class FakeInComponent{
-
+  
   email! : string;
 
-  constructor(private router : Router) { }
+  constructor(private service : FormServiceService, private router : Router) { }
 
-  email_submit(){
+  emailSubmit(){
     console.log(this.email);
-    this.router.navigateByUrl('nps');
+
+    this.service.verify_email(this.email).subscribe((result) => {
+      console.log('result', result);
+      const { status, user } = result;
+      if(status == false){
+        this.router.navigate(['already-answered']);
+      } else {
+        if (user.status == true){
+          this.router.navigate(['already-answered']);
+        }
+      }
+    })
+
+
+    this.router.navigate(['nps'], {queryParams : {'email' : this.email}});
   }
 
 }

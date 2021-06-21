@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Vote } from '../models/vote.model';
 import { FormServiceService } from '../services/form-service.service';
 
@@ -10,13 +11,36 @@ import { FormServiceService } from '../services/form-service.service';
 export class FormNpsComponent {
   title = 'net-promoter-score';
   list : number[] = [1,2,3,4,5,6,7,8,9,10];
-  test_id = '4c224fb7-7c71-4cfd-a884-1be410206630';
+  id! : string;
   value : number = 0;
 
   // constructor(private service : FormServiceService) { }
-  constructor(private service : FormServiceService) {
+  constructor(private service : FormServiceService, private route: ActivatedRoute, private router : Router) {
+
+    const { email } = this.route.snapshot.queryParams;
+    console.log(email);
+    this.router.navigate([], {
+      queryParams: {
+        'email': null,
+      },
+      queryParamsHandling: 'merge'
+    })
+
+    this.service.verify_email(email).subscribe((result) => {
+      const { status, user } = result;
+      if(status == false){
+        this.router.navigate(['already-answered']);
+      } else {
+        if (user.status == true){
+          this.router.navigate(['already-answered']);
+        } else {
+          this.id = user.id;
+        }
+      }
+    })
+
    }
-  
+
 
   onClick(value : number){
     // this.bntStyle = 'btn-change';
@@ -24,13 +48,14 @@ export class FormNpsComponent {
   }
 
   sendReply(){
-    console.log(this.test_id);
+    console.log(this.id);
     console.log(this.value);
 
     const valueEmit : Vote = {description : this.value}
 
-    this.service.add_vote(this.test_id, valueEmit).subscribe((result) => {
+    this.service.add_vote(this.id, valueEmit).subscribe((result) => {
       console.log('result', result);
+      this.router.navigateByUrl('answer-saved');
     }, (error) => {
       console.log('error', error);
     });
