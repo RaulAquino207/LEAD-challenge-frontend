@@ -15,11 +15,20 @@
   height: 50px;
   display: flex;
   align-items: center;
+  text-align: center;
   background-color: #1976d2;
   color: white;
   font-weight: 800;
+  justify-content: center;
 }
 
 .toolbar img {
   margin: 0 16px;
+}
+
+.spam {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
