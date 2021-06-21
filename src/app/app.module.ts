@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AlreadyAnsweredComponent } from './already-answered/already-answered.component';
 import { AnswerSavedComponent } from './answer-saved/answer-saved.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
     FakeInComponent,
     AlreadyAnsweredComponent,
     AnswerSavedComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
