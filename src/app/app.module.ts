@@ -11,6 +11,8 @@ import { AlreadyAnsweredComponent } from './already-answered/already-answered.co
 import { AnswerSavedComponent } from './answer-saved/answer-saved.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { DashboardNpsComponent } from './dashboard-nps/dashboard-nps.component';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -20,13 +22,15 @@ import { FooterComponent } from './footer/footer.component';
     AlreadyAnsweredComponent,
     AnswerSavedComponent,
     ToolbarComponent,
-    FooterComponent
+    FooterComponent,
+    DashboardNpsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

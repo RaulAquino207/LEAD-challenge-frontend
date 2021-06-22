@@ -20,4 +20,8 @@ export class FormServiceService {
     return this.httpClient.get<Result>(`${this.url}/user/email/${email}`);
   }
 
+  infos_nps(){
+    return this.httpClient.get(`${this.url}/user/list/descriptions`);
+  }
+
 }
