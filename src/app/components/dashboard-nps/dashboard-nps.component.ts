@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 import { ChartType } from 'chart.js';
-import { MultiDataSet, Label, PluginServiceGlobalRegistrationAndOptions } from 'ng2-charts';
+import { MultiDataSet, Label, PluginServiceGlobalRegistrationAndOptions, SingleDataSet } from 'ng2-charts';
 import { FormServiceService } from '../../services/form-service.service';
 
 @Component({
@@ -9,8 +9,6 @@ import { FormServiceService } from '../../services/form-service.service';
   styleUrls: ['./dashboard-nps.component.scss']
 })
 export class DashboardNpsComponent implements OnInit {
-  // Doughnut
-  // doughnutChartData! : any;
 
   constructor(private service : FormServiceService) { }
 
@@ -25,14 +23,36 @@ export class DashboardNpsComponent implements OnInit {
   public doughnutChartType: ChartType = 'doughnut';
   public doughnutChartColors: Array<any> = [];
   public doughnutChartPlugins: PluginServiceGlobalRegistrationAndOptions[] = [{
-    afterDraw(chart){
+    afterDraw(chart) {
       const ctx = chart.ctx;
-      ctx?.fillText('test', 10, 20);
+
+      var txt2 : any;   
+      
+      console.log(chart.config.data?.datasets?.map((result) =>{
+        // console.log('data',result.data![2]);  
+
+        for (let index = 0; index < result.data!.length; index++) {
+          
+          console.log('value');
+          console.log(result.data![index]);
+        }
+        }
+      ));
+
+      txt2 = chart.config.data
+  
+      ctx!.textAlign = 'center';
+      ctx!.textBaseline = 'middle';
+      const centerX = ((chart.chartArea.left + chart.chartArea.right) / 2);
+      const centerY = ((chart.chartArea.top + chart.chartArea.bottom) / 2);
+  
+      ctx!.fillText(txt2, centerX, centerY);
+  
     }
   }];
-  
 
   ngOnInit(): void {
+
     this.service.infos_nps().subscribe((result) => {
       this.handleData(result);
       this.calculateNps(result);
@@ -43,7 +63,10 @@ export class DashboardNpsComponent implements OnInit {
         {backgroundColor:['#DC143C', '#FFFF00', '#7FFF00']},
       ]
       console.log(result);
+
     })
+    
+    
   }
 
   calculateNps(data : any){
@@ -84,8 +107,6 @@ export class DashboardNpsComponent implements OnInit {
         }
 
       }
-
-      return data.length;
 
   }
 
