@@ -3,16 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormNpsComponent } from './form-nps/form-nps.component';
-import { FakeInComponent } from './fake-in/fake-in.component';
+import { FormNpsComponent } from './components/form-nps/form-nps.component';
+import { FakeInComponent } from './components/fake-in/fake-in.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { AlreadyAnsweredComponent } from './already-answered/already-answered.component';
-import { AnswerSavedComponent } from './answer-saved/answer-saved.component';
-import { ToolbarComponent } from './toolbar/toolbar.component';
-import { FooterComponent } from './footer/footer.component';
-import { DashboardNpsComponent } from './dashboard-nps/dashboard-nps.component';
+import { AlreadyAnsweredComponent } from './components/already-answered/already-answered.component';
+import { AnswerSavedComponent } from './components/answer-saved/answer-saved.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { DashboardNpsComponent } from './components/dashboard-nps/dashboard-nps.component';
 import { ChartsModule } from 'ng2-charts';
+import { HomePageComponent } from './components/home-page/home-page.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ChartsModule } from 'ng2-charts';
     AnswerSavedComponent,
     ToolbarComponent,
     FooterComponent,
-    DashboardNpsComponent
+    DashboardNpsComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,

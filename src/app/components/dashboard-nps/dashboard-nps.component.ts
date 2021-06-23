@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ChartType } from 'chart.js';
 import { MultiDataSet, Label } from 'ng2-charts';
-import { FormServiceService } from '../services/form-service.service';
+import { FormServiceService } from '../../services/form-service.service';
 
 @Component({
   selector: 'app-doughnut-chart',
@@ -48,7 +48,7 @@ export class DashboardNpsComponent implements OnInit {
           case 8:
             this.neutros++;
             break;
-            
+
           case 9:
           case 10:
             this.promotores++;

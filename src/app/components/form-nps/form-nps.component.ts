@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Vote } from '../models/vote.model';
-import { FormServiceService } from '../services/form-service.service';
+import { Vote } from '../../models/vote.model';
+import { FormServiceService } from '../../services/form-service.service';
 
 @Component({
   selector: 'app-form-nps',

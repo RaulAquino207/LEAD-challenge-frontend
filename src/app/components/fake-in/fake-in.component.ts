@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { FormServiceService } from '../services/form-service.service';
+import { FormServiceService } from '../../services/form-service.service';
 
 @Component({
   selector: 'app-fake-in',
@@ -8,7 +8,7 @@ import { FormServiceService } from '../services/form-service.service';
   styleUrls: ['./fake-in.component.scss']
 })
 export class FakeInComponent{
-  
+
   email! : string;
 
   constructor(private service : FormServiceService, private router : Router) { }
