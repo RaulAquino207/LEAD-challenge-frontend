@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ChartType } from 'chart.js';
-import { MultiDataSet, Label } from 'ng2-charts';
+import { MultiDataSet, Label, PluginServiceGlobalRegistrationAndOptions } from 'ng2-charts';
 import { FormServiceService } from '../../services/form-service.service';
 
 @Component({
@@ -18,18 +18,46 @@ export class DashboardNpsComponent implements OnInit {
   neutros : number = 0;
   promotores : number = 0;
 
+  nps_value : number = 0;
+
   public doughnutChartLabels: Label[] = ['Detratores', 'Neutros', 'Promotores'];
   public doughnutChartData: MultiDataSet = [];
   public doughnutChartType: ChartType = 'doughnut';
+  public doughnutChartColors: Array<any> = [];
+  public doughnutChartPlugins: PluginServiceGlobalRegistrationAndOptions[] = [{
+    afterDraw(chart){
+      const ctx = chart.ctx;
+      ctx?.fillText('test', 10, 20);
+    }
+  }];
+  
 
   ngOnInit(): void {
     this.service.infos_nps().subscribe((result) => {
       this.handleData(result);
+      this.calculateNps(result);
       this.doughnutChartData = [
         [this.detratores, this.neutros, this.promotores]
       ];
+      this.doughnutChartColors = [
+        {backgroundColor:['#DC143C', '#FFFF00', '#7FFF00']},
+      ]
       console.log(result);
     })
+  }
+
+  calculateNps(data : any){
+    console.log(data.length);
+    let percent_promot = this.promotores;
+    let percent_detrat = this.detratores;
+
+    console.log('promotores', this.promotores);
+    console.log('detratores', this.detratores);
+
+    this.nps_value = ((percent_promot / data.length) - (percent_detrat / data.length)) * 100;
+    this.nps_value = Math.ceil(this.nps_value);
+    console.log(this.nps_value);
+
   }
 
   handleData(data: any){
@@ -56,6 +84,8 @@ export class DashboardNpsComponent implements OnInit {
         }
 
       }
+
+      return data.length;
 
   }
 

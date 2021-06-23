@@ -19,6 +19,10 @@ export class FakeInComponent{
     this.service.verify_email(this.email).subscribe((result) => {
       console.log('result', result);
       const { status, user } = result;
+
+      if(user.tag == 'admin'){
+        this.router.navigate(['doughnutchart']);
+      }
       if(status == false){
         this.router.navigate(['already-answered']);
       } else {

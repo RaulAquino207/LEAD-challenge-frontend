@@ -8,8 +8,8 @@ import { FormNpsComponent } from './components/form-nps/form-nps.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 
 const routes: Routes = [
-  {path: '', redirectTo : 'home', pathMatch: 'full'},
-  {path: 'home', component: HomePageComponent},
+  {path: '', redirectTo : 'fake-in', pathMatch: 'full'},
+  // {path: 'home', component: HomePageComponent},
   {path: 'fake-in', component : FakeInComponent},
   {path: 'nps', component : FormNpsComponent},
   {path: 'already-answered', component : AlreadyAnsweredComponent},

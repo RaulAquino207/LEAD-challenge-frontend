@@ -3,6 +3,7 @@
     <div>
       <div>
         <canvas baseChart
+          [colors]="doughnutChartColors"
           [data]="doughnutChartData"
           [labels]="doughnutChartLabels"
           [chartType]="doughnutChartType">
@@ -10,4 +11,6 @@
       </div>
     </div>
   </div>
+
+  <h1>{{nps_value}}</h1>
 </div>
