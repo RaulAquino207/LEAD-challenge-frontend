@@ -11,9 +11,12 @@ import { AlreadyAnsweredComponent } from './components/already-answered/already-
 import { AnswerSavedComponent } from './components/answer-saved/answer-saved.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { DashboardNpsComponent } from './components/dashboard-nps/dashboard-nps.component';
 import { ChartsModule } from 'ng2-charts';
 import { HomePageComponent } from './components/home-page/home-page.component';
+import { BarChartComponent } from './components/bar-chart/bar-chart.component';
+import { DashboardPageComponent } from './components/dashboard-page/dashboard-page.component';
+import { DoughnutChartComponent } from './components/doughnut-chart/doughnut-chart.component';
+
 
 @NgModule({
   declarations: [
@@ -24,8 +27,10 @@ import { HomePageComponent } from './components/home-page/home-page.component';
     AnswerSavedComponent,
     ToolbarComponent,
     FooterComponent,
-    DashboardNpsComponent,
-    HomePageComponent
+    HomePageComponent,
+    BarChartComponent,
+    DashboardPageComponent,
+    DoughnutChartComponent,
   ],
   imports: [
     BrowserModule,

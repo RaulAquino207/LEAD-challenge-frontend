@@ -5,10 +5,10 @@ import { FormServiceService } from '../../services/form-service.service';
 
 @Component({
   selector: 'app-doughnut-chart',
-  templateUrl: './dashboard-nps.component.html',
-  styleUrls: ['./dashboard-nps.component.scss']
+  templateUrl: './doughnut-chart.component.html',
+  styleUrls: ['./doughnut-chart.component.scss']
 })
-export class DashboardNpsComponent implements OnInit {
+export class DoughnutChartComponent implements OnInit {
 
   constructor(private service : FormServiceService) { }
 
@@ -26,13 +26,13 @@ export class DashboardNpsComponent implements OnInit {
     afterDraw(chart) {
       const ctx = chart.ctx;
 
-      var txt2 : any;   
-      
+      var txt2 : any;
+
       console.log(chart.config.data?.datasets?.map((result) =>{
-        // console.log('data',result.data![2]);  
+        // console.log('data',result.data![2]);
 
         for (let index = 0; index < result.data!.length; index++) {
-          
+
           console.log('value');
           console.log(result.data![index]);
         }
@@ -40,14 +40,14 @@ export class DashboardNpsComponent implements OnInit {
       ));
 
       txt2 = chart.config.data
-  
+
       ctx!.textAlign = 'center';
       ctx!.textBaseline = 'middle';
       const centerX = ((chart.chartArea.left + chart.chartArea.right) / 2);
       const centerY = ((chart.chartArea.top + chart.chartArea.bottom) / 2);
-  
+
       ctx!.fillText(txt2, centerX, centerY);
-  
+
     }
   }];
 
@@ -65,8 +65,8 @@ export class DashboardNpsComponent implements OnInit {
       console.log(result);
 
     })
-    
-    
+
+
   }
 
   calculateNps(data : any){
@@ -118,4 +118,7 @@ export class DashboardNpsComponent implements OnInit {
   public chartHovered({ event, active }: { event: MouseEvent, active: {}[] }): void {
     console.log(event, active);
   }
+
 }
+
+

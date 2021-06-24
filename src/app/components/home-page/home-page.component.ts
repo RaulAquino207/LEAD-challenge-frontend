@@ -1,18 +1,24 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { FormServiceService } from 'src/app/services/form-service.service';
 
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss']
 })
-export class HomePageComponent implements OnInit {
+export class HomePageComponent {
 
   email!: string;
   password!: string;
 
-  constructor() { }
+  constructor(private service: FormServiceService, private router: Router) { }
 
-  ngOnInit(): void {
+  userSubmission(){
+    console.log(this.email);
+    console.log(this.password);
+
+
   }
 
 }
