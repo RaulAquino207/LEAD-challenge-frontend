@@ -21,7 +21,8 @@ export class FakeInComponent{
       const { status, user } = result;
 
       if(user.tag == 'admin'){
-        this.router.navigate(['doughnutchart']);
+        console.log('entrou nesse IF');
+        this.router.navigate(['dashboard']);
       }
       if(status == false){
         this.router.navigate(['already-answered']);

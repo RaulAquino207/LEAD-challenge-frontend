@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ChartData, ChartDataSets, ChartOptions, ChartType } from 'chart.js';
-import * as pluginDataLabels from 'chartjs-plugin-datalabels';
 import { Colors, Label, MultiDataSet } from 'ng2-charts';
 import { FormServiceService } from 'src/app/services/form-service.service';
 
@@ -15,27 +14,9 @@ export class BarChartComponent implements OnInit {
 
   constructor( private service : FormServiceService) { }
 
-  // detratores_01 : number = 0;
-  // detratores_02 : number = 0;
-  // detratores_03 : number = 0;
-  // detratores_04 : number = 0;
-  // detratores_05 : number = 0;
-  // detratores_06 : number = 0;
-  // neutros_07 : number = 0;
-  // neutros_08 : number = 0;
-  // promotores_09 : number = 0;
-  // promotores_10 : number = 0;
-
-  detratores_01 : number = 10;
-  detratores_02 : number = 80;
-  detratores_03 : number = 60;
-  detratores_04 : number = 10;
-  detratores_05 : number = 20;
-  detratores_06 : number = 50;
-  neutros_07 : number = 50;
-  neutros_08 : number = 30;
-  promotores_09 : number = 20;
-  promotores_10 : number = 10;
+  detratores = [0,0,0,0,0,0,0,0,0,0];
+  neutros = [0,0,0,0,0,0,0,0,0,0];
+  promotores = [0,0,0,0,0,0,0,0,0,0];
 
 
   public barChartOptions: ChartOptions = {
@@ -55,145 +36,41 @@ export class BarChartComponent implements OnInit {
   public barChartType: ChartType = 'bar';
   public barChartLegend = true;
   public barChartPlugins = [];
-  // public barChartData: ChartDataSets[] = [];
-  // public barChartColors: Colors[] = [];
+  public barChartData: ChartDataSets[] = [];
 
-
-  public barChartData: ChartDataSets[] = [
-    { data: [
-      this.detratores_01,
-      this.detratores_02,
-      this.detratores_03,
-      this.detratores_04,
-      this.detratores_05,
-      this.detratores_06,
-      0,
-      0,
-      0,
-      0,
-    ], label:"Detractors"},
-    { data: [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      this.neutros_07,
-      this.neutros_08,
-      0,
-      0,
-    ], label:"Passives"},
-    { data: [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      this.promotores_09,
-      this.promotores_10,
-    ], label:" Promoters"},
-  ];
-
-  public barChartColors = [
-    {backgroundColor: '#DC143C'},
-    {backgroundColor: '#FFFF00'},
-    {backgroundColor: '#7FFF00'}
-  ]
-
+  public barChartColors = [{backgroundColor: '#DC143C'}, {backgroundColor: '#FFFF00'}, {backgroundColor: '#7FFF00'},]
 
   ngOnInit(): void {
 
     this.service.infos_nps().subscribe((result) => {
       this.handleData(result);
-      this.barChartData = [
-        { data: [
-          this.detratores_01,
-          this.detratores_02,
-          this.detratores_03,
-          this.detratores_04,
-          this.detratores_05,
-          this.detratores_06,
-          0,
-          0,
-          0,
-          0,
-        ], label:"Detractors"},
-        { data: [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          this.neutros_07,
-          this.neutros_08,
-          0,
-          0,
-        ], label:"Passives"},
-        { data: [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          this.promotores_09,
-          this.promotores_10,
-        ], label:" Promoters"},
-      ]
-      // this.barChartColors = [
-      //   {backgroundColor: '#DC143C'},
-      //   {backgroundColor: '#FFFF00'},
-      //   {backgroundColor: '#7FFF00'},
-      // ]
+      this.barChartData = [{
+        data : this.detratores, label : 'Detratores'
+      },{
+        data : this.neutros, label : 'Neutros'
+      },{
+        data : this.promotores, label : 'Promotores'
+      }]
     })
   }
 
-  handleData(data: any) {
-    for (let index = 0; index < data.length; index++) {
-          switch (data[index]) {
-          case 1:
-            this.detratores_01++;
-            break;
-          case 2:
-            this.detratores_02++;
-            break;
-          case 3:
-            this.detratores_03++;
-            break;
-          case 4:
-            this.detratores_04++;
-            break;
-          case 5:
-            this.detratores_05++;
-            break;
-          case 6:
-            this.detratores_06++;
-            break;
-          case 7:
-            this.neutros_07++;
-            break;
-          case 8:
-            this.neutros_08++;
-            break;
-          case 9:
-            this.promotores_09++;
-            break;
-          case 10:
-            this.promotores_10++;
-            break;
-        }
-
-      }
+  isInArray(value : any, array: any) {
+    return array.indexOf(value) > -1;
   }
 
-
+  handleData(data: any) {
+    console.log(data);
+    data.map((value : number) => {
+      console.log(value);
+      if(this.isInArray(value, [1, 2, 3, 4, 5, 6])){
+        this.detratores[value - 1] = this.detratores[value - 1] + 1
+      } else if(this.isInArray(value, [7, 8])){
+        this.neutros[value - 1] = this.neutros[value - 1] + 1
+      } else if (this.isInArray(value, [9, 10])){
+        this.promotores[value - 1] = this.promotores[value - 1] + 1
+      }
+    });
+  }
 
   // events
   public chartClicked({ event, active }: { event: MouseEvent, active: {}[] }): void {
@@ -203,17 +80,5 @@ export class BarChartComponent implements OnInit {
   public chartHovered({ event, active }: { event: MouseEvent, active: {}[] }): void {
     console.log(event, active);
   }
-
-  // public randomize(): void {
-  //   // Only Change 3 values
-  //   this.barChartData[0].data = [
-  //     Math.round(Math.random() * 100),
-  //     59,
-  //     80,
-  //     (Math.random() * 100),
-  //     56,
-  //     (Math.random() * 100),
-  //     40 ];
-  // }
 
 }

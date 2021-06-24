@@ -16,8 +16,6 @@ export class DoughnutChartComponent implements OnInit {
   neutros : number = 0;
   promotores : number = 0;
 
-  nps_value : number = 0;
-
   public doughnutChartLabels: Label[] = ['Detratores', 'Neutros', 'Promotores'];
   public doughnutChartData: MultiDataSet = [];
   public doughnutChartType: ChartType = 'doughnut';
@@ -26,27 +24,40 @@ export class DoughnutChartComponent implements OnInit {
     afterDraw(chart) {
       const ctx = chart.ctx;
 
-      var txt2 : any;
+      var nps_value : any;
 
-      console.log(chart.config.data?.datasets?.map((result) =>{
+      chart.config.data?.datasets?.map((result) =>{
         // console.log('data',result.data![2]);
+        let aux = 0;
+        let percent_detrat = 0;
+        let percent_promot = 0;
+        for (let index = 0; index < result.data!.length; index++) {
+          aux = aux + Number(result.data![index])
+        }
 
         for (let index = 0; index < result.data!.length; index++) {
 
-          console.log('value');
-          console.log(result.data![index]);
-        }
-        }
-      ));
+          // console.log(result.data![index]);
 
-      txt2 = chart.config.data
+          if(index == 0){
+            percent_detrat = Number(result.data![index]) / aux
+          }else if(index == 2){
+            percent_promot = Number(result.data![index]) / aux
+          }
+        }
+
+        nps_value = (percent_promot - percent_detrat) * 100;
+        nps_value = Math.ceil(nps_value);
+
+        }
+      );
 
       ctx!.textAlign = 'center';
       ctx!.textBaseline = 'middle';
       const centerX = ((chart.chartArea.left + chart.chartArea.right) / 2);
       const centerY = ((chart.chartArea.top + chart.chartArea.bottom) / 2);
 
-      ctx!.fillText(txt2, centerX, centerY);
+      ctx!.fillText(nps_value, centerX, centerY);
 
     }
   }];
@@ -55,31 +66,16 @@ export class DoughnutChartComponent implements OnInit {
 
     this.service.infos_nps().subscribe((result) => {
       this.handleData(result);
-      this.calculateNps(result);
       this.doughnutChartData = [
         [this.detratores, this.neutros, this.promotores]
       ];
       this.doughnutChartColors = [
         {backgroundColor:['#DC143C', '#FFFF00', '#7FFF00']},
       ]
-      console.log(result);
+      // console.log(result);
 
     })
 
-
-  }
-
-  calculateNps(data : any){
-    console.log(data.length);
-    let percent_promot = this.promotores;
-    let percent_detrat = this.detratores;
-
-    console.log('promotores', this.promotores);
-    console.log('detratores', this.detratores);
-
-    this.nps_value = ((percent_promot / data.length) - (percent_detrat / data.length)) * 100;
-    this.nps_value = Math.ceil(this.nps_value);
-    console.log(this.nps_value);
 
   }
 
