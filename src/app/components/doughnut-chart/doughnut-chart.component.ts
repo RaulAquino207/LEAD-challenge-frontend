@@ -1,5 +1,5 @@
 import { Component, ElementRef, OnInit } from '@angular/core';
-import { ChartType } from 'chart.js';
+import { ChartConfiguration, ChartOptions, ChartTooltipOptions, ChartType } from 'chart.js';
 import { MultiDataSet, Label, PluginServiceGlobalRegistrationAndOptions, SingleDataSet } from 'ng2-charts';
 import { FormServiceService } from '../../services/form-service.service';
 
