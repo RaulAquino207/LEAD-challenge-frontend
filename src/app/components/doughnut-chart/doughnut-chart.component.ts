@@ -55,7 +55,7 @@ export class DoughnutChartComponent implements OnInit {
 
       ctx!.textAlign = 'center';
       ctx!.textBaseline = 'middle';
-      ctx!.font = 50 + 'px Franklin Gothic';
+      ctx!.font = '50px Franklin Gothic';
 
       const centerX = ((chart.chartArea.left + chart.chartArea.right) / 2);
       const centerY = ((chart.chartArea.top + chart.chartArea.bottom) / 2);
