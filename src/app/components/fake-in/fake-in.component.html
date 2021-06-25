@@ -1,19 +1,22 @@
-<div class="content" role="main">
+<div id="content" role="main">
 
-  <form class="app-form" (ngSubmit)="emailSubmit()">
+  <form id="app-form" (ngSubmit)="emailSubmit()">
     <div>
       <!-- Highlight Card -->
-      <img class="center" width="80" alt="Angular Logo"
+      <img id="center" width="80" alt="Angular Logo"
         src="https://jornalistainclusivo.com/wp-content/uploads/2020/06/lead-dell-circulo.png" />
 
     </div>
-    <h2 class="app-form__title">Confirme seu email!</h2>
-    <div class="form-field">
-        <label class="form-field__label" for="email"></label>
-        <input class="form-field__input" id="email" type="text" [(ngModel)]="email" name="email">
+    <br>
+    <h4 id="app-form__title">Confirme seu email!</h4>
+    <br>
+    <div id="form-field">
+        <label id="form-field__label" for="email"></label>
+        <input id="form-field__input" id="email" type="text" [(ngModel)]="email" name="email">
     </div>
-    <div class="button-wrapper">
-        <button class="button" type="submit">Quero responder</button>
+    <br>
+    <div id="button-wrapper center">
+        <button class="btn btn-primary" type="submit">Quero responder</button>
     </div>
   </form>
 

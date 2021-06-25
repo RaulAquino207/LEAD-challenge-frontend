@@ -12,10 +12,10 @@ import { AnswerSavedComponent } from './components/answer-saved/answer-saved.com
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ChartsModule } from 'ng2-charts';
-import { HomePageComponent } from './components/home-page/home-page.component';
 import { BarChartComponent } from './components/bar-chart/bar-chart.component';
 import { DashboardPageComponent } from './components/dashboard-page/dashboard-page.component';
 import { DoughnutChartComponent } from './components/doughnut-chart/doughnut-chart.component';
+import { RegistrationComponent } from './components/registration/registration.component';
 
 
 @NgModule({
@@ -27,10 +27,10 @@ import { DoughnutChartComponent } from './components/doughnut-chart/doughnut-cha
     AnswerSavedComponent,
     ToolbarComponent,
     FooterComponent,
-    HomePageComponent,
     BarChartComponent,
     DashboardPageComponent,
     DoughnutChartComponent,
+    RegistrationComponent,
   ],
   imports: [
     BrowserModule,

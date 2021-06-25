@@ -20,11 +20,11 @@
     margin: 0;
   }
 
-  .spacer {
+  #spacer {
     flex: 1;
   }
 
-  .toolbar {
+  #toolbar {
     position: absolute;
     top: 0;
     left: 0;
@@ -37,11 +37,11 @@
     font-weight: 600;
   }
 
-  .toolbar img {
+  #toolbar img {
     margin: 0 16px;
   }
 
-  .content {
+  #content {
     display: flex;
     margin: 82px auto 32px;
     padding: 0 16px;
@@ -67,11 +67,11 @@
     margin-right: 8px;
   }
 
-  .card svg.material-icons path {
+  #card svg.material-icons path {
     fill: #888;
   }
 
-  .card-container {
+  #card-container {
     display: flex;
     flex-direction: inherit;
     flex-wrap: wrap;
@@ -79,7 +79,7 @@
     margin-top: 16px;
   }
 
-  .card {
+  #card {
     border-radius: 50%;
     border: 1px solid #eee;
     background-color: #fafafa;
@@ -95,29 +95,29 @@
     line-height: 24px;
   }
 
-  .card-container .card:not(:last-child) {
+  #card-container .card:not(:last-child) {
     margin-right: 0;
   }
 
-  .card.card-small {
+  #card.card-small {
     height: 16px;
     width: 168px;
   }
 
-  .card-container .card:not(.highlight-card) {
+  #card-container .card:not(.highlight-card) {
     cursor: pointer;
   }
 
-  .card-container .card:not(.highlight-card):hover {
+  #card-container .card:not(.highlight-card):hover {
     transform: translateY(-3px);
     box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
   }
 
-  .card-container .card:not(.highlight-card):hover .material-icons path {
+  #card-container .card:not(.highlight-card):hover .material-icons path {
     fill: rgb(105, 103, 103);
   }
 
-  .card.highlight-card {
+  #card.highlight-card {
     border-radius: 4px;
     // background-color: #1976d2;
     color: white;
@@ -128,7 +128,7 @@
     position: relative;
   }
 
-  .card.card.highlight-card span {
+  #card.card.highlight-card span {
     margin-left: 5px;
   }
 
@@ -143,22 +143,22 @@
     color: #125699;
   }
 
-.workaround {
+#workaround {
   display: flex;
   flex-direction: row;
 }
 
-.btn-change {
+#btn-change {
   border-color: #1976d2;
   border-width: 4px;
   background-color: white;
 }
 
-.button-wrapper {
+#button-wrapper {
   display: flex;
 }
 
-.button {
+#button {
   background-color:#1976d2;
   color: white;
   display: block;
@@ -180,7 +180,7 @@
   }
 }
 
-.app-form {
+#app-form {
   background-color: white;
   padding: 16px;
   border-radius: 4px;
@@ -193,7 +193,7 @@
     flex-direction: column;
   }
 }
-  .form-field {
+  #form-field {
     width: 300px;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -216,7 +216,7 @@
     }
   }
 
-  .center {
+  #center {
     display: block;
     margin-left: auto;
     margin-right: auto;

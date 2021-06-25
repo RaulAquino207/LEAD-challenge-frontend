@@ -2,16 +2,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AlreadyAnsweredComponent } from './components/already-answered/already-answered.component';
 import { AnswerSavedComponent } from './components/answer-saved/answer-saved.component';
-import { BarChartComponent } from './components/bar-chart/bar-chart.component';
 import { DashboardPageComponent } from './components/dashboard-page/dashboard-page.component';
-import { DoughnutChartComponent } from './components/doughnut-chart/doughnut-chart.component';
 import { FakeInComponent } from './components/fake-in/fake-in.component';
 import { FormNpsComponent } from './components/form-nps/form-nps.component';
+import { RegistrationComponent } from './components/registration/registration.component';
 
 const routes: Routes = [
   {path: '', redirectTo : 'fake-in', pathMatch: 'full'},
-  {path: 'bar', component: BarChartComponent},
-  {path: 'donut', component: DoughnutChartComponent},
+  {path: 'registration', component: RegistrationComponent},
   {path: 'dashboard', component: DashboardPageComponent},
   {path: 'fake-in', component : FakeInComponent},
   {path: 'nps', component : FormNpsComponent},
