@@ -52,12 +52,16 @@ export class DoughnutChartComponent implements OnInit {
         }
       );
 
+
       ctx!.textAlign = 'center';
       ctx!.textBaseline = 'middle';
+      ctx!.font = 50 + 'px Franklin Gothic';
+
       const centerX = ((chart.chartArea.left + chart.chartArea.right) / 2);
       const centerY = ((chart.chartArea.top + chart.chartArea.bottom) / 2);
 
       ctx!.fillText(nps_value, centerX, centerY);
+      // ctx!.fillRect(centerX, centerY, 20, 20);
 
     }
   }];
