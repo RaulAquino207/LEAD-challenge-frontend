@@ -1,0 +1,399 @@
+{
+  "SHARED": {
+    "CONFIRM_MODAL": {
+      "TITLE": "Confirm deletion",
+      "BODY": "Are you sure you want to permanently remove this item?"
+    }
+  },
+  "TERMS_CREATE_FAILED": "The term could not be created.",
+  "TERMS_FETCH_FAILED": "The term could not be loaded.",
+  "TERMS": {
+    "TITLE": "General terms of use",
+    "AGREE": "Agree",
+    "DISAGREE": "Disagree",
+    "DISAGREE_DESCRIPTION": "We need the terms of use to be accepted for access to the LEAD Solution Center. Would you like to talk to us about the terms of use?",
+    "ERRORS": {
+      "ACCEPT": "Could not accept term",
+      "GET": "Couldn't access term"
+    },
+    "TERMS_OF_USE": "Terms of Use",
+    "STATUS": "Status",
+    "VERSION_DATE": "Version Date",
+    "ADD_NEW_TERMS_OF_USE": "Add new terms of use",
+    "NEW_TERMS_OF_USE": "New Terms of Use",
+    "STATUS_ACTIVE": "Active",
+    "STATUS_INACTIVE": "Inactive",
+    "EDIT_TERMS": "Edit Terms",
+    "UPDATE_TERMS_OF_USE": "Update Terms of Use",
+    "TERMS_VERSION": "Terms of Use Version"
+  },
+  "CONTACT": {
+    "HELP": "Need help? We're here for you.",
+    "SUCCESS": "Message sent successfully",
+    "ERROR": "An error occurred while sending the message",
+    "ERROR_ATTACHMENT": "You can only send 25MB of attachment",
+    "BREADCRUMB": {
+      "CONTACT": "Contact Us"
+    },
+    "SUBTITLE": "Do you have any suggestions or any problems with the platform or any of our products? Contact us!",
+    "FORM": {
+      "NAME": "Name",
+      "EMAIL": "E-mail",
+      "SUBJECT": "Subject",
+      "MESSAGE": "Message",
+      "PURPOSE": "Purpose of the Contact",
+      "PURPOSE_PLACEHOLDER": "Select a contact purpose",
+      "PURPOSES": {
+        "PROBLEM": "System problems",
+        "SUGGESTIONS": "Suggestions",
+        "REQUESTS": "Requests"
+      },
+      "ATTACHMENTS": "Attachments",
+      "SEND": "Send Message"
+    }
+  },
+  "PRODUCT": {
+    "PRODUCTS": "Products",
+    "PRODUCT": "Product",
+    "ALL_PRODUCTS": "All Products",
+    "ADD_PRODUCT": "ADD NEW PRODUCT",
+    "REGISTER_PRODUCT": "Register Product",
+    "EDIT_PRODUCT": "Edit Product",
+    "PRODUCT_INFORMATION": "Product",
+    "DESCRIPTION": "Product Description",
+    "GENERAL_INFORMATION": "General Information",
+    "RECOMMENDATIONS": "Recommendations",
+    "HOW_TO_USE": "How to use",
+    "HOW_TO_USE_TITLE": "You can write a tutorial for your product (this step is optional)",
+    "DELETE_PLACEHOLDER": "Are you sure you want to delete the product?",
+    "SUCCESS": {
+      "DOWNLOAD": "Download successfully!"
+    },
+    "ERROR": {
+      "DATA": "Unable to load data",
+      "DOWNLOAD": "Couldn't download the file",
+      "DELETE": "Unable to delete product",
+      "AVATAR": "The photo could not be displayed"
+    },
+    "PRODUCT_VERSION": "Version",
+    "PRODUCT_TUTORIAL": "Tutorial Information",
+    "FORM": {
+      "PRODUCT_INFORMATION": "Enter the product information",
+      "PRODUCT_VERSION": "Register the product information",
+      "SUCCESS": "Product Successfully Added!",
+      "EDIT_SUCCESS": "Product successfully Edited!",
+      "INVALID_LOGO_FORM": "Invalid format! Your image must be in jpeg, png, jpg, ico and svg format",
+      "INVALID_FILE_FORM": "Invalid format! Your file must be in zip, apk, exe, msi, e xpi",
+      "ERROR": "Unable to add products",
+      "DELETE_ERROR": "Unable to delete product",
+      "DELETED_SUCCESS": "Product successfully deleted!"
+    },
+    "LIST": {
+      "UPDATE": "Last Update",
+      "CREATE": "Created at",
+      "ERROR": "Unable to load products",
+      "IN-USE": "Products in use",
+      "INSTALL": "Your installed softwares",
+      "EMPTY-STATE": "No products installed",
+      "EMPTY-PRODUCTS": "No products registered"
+    },
+    "DETAILS": {
+      "INSTALLED": "Installed",
+      "UPDATE": "Update",
+      "INSTALL": "Install",
+      "DOWNLOAD": "Download",
+      "EDIT": "Edit",
+      "DELETE": "Delete",
+      "CONTACT": "Contact Us",
+      "PROBLEM": "Having problems with this product?",
+      "UPLOAD": "Upload File"
+    },
+    "INSTALLATION": {
+      "TITLE": "Installation",
+      "FAILED": "Installation has failed",
+      "STEP_1": {
+        "DESCRIPTION": "To do the direct installation, we need you to configure your device:",
+        "LI_1": "Activate developer mode on your device;",
+        "LI_2": "Enable debugging mode;",
+        "NEED_HELP": "Help"
+      },
+      "STEP_2": {
+        "DESCRIPTION": "Connect your device via USB and do not remove the cable until completion."
+      },
+      "STEP_3": {
+        "DESCRIPTION": "Verifying devices..."
+      },
+      "STEP_4": {
+        "DESCRIPTION": "Select your device",
+        "NO_DEVICES_FOUND": "No devices found!"
+      },
+      "STEP_5": {
+        "DESCRIPTION": "Instaling...",
+        "WARNING": "Do not disconnect your device from USB"
+      },
+      "STEP_6": {
+        "DESCRIPTION": "Instalation Complete!",
+        "FAILED": "An error occurred during installation on one of the connected devices. Please try again! If the error persists, contact us.",
+        "FAILED_ALL": "An error occurred during installation. Please try again! If the error persists, contact us.",
+        "ERROR_REPORTING": "Error report:",
+        "DEVICE_UNAUTHOTHORIZED": "Device without permission",
+        "DEVICE_DISCONNECTED": "Device disconnected",
+        "ERROR_UNKNOWN": "Unknown error"
+      }
+    },
+    "LABEL": {
+      "VERSION_DATE": "Version Date",
+      "PRODUCT_FILE": "Product File",
+      "RECOMMENDATIONS": "Recommendations",
+      "GENERAL_INFORMATION": "General Information",
+      "HOW_TO_USE": "Tutorial",
+      "NAME": "Product Name",
+      "LOGO": "Product Logo",
+      "DESCRIPTION": "Product Description",
+      "FILE": "Choose File"
+    },
+    "PLACEHOLDER": {
+      "NAME": "Enter Product Name",
+      "LOGO": "Select a file",
+      "DESCRIPTION": "Description"
+    },
+    "MISSING_PRODUCT_FILE": "Missing Product File",
+    "VERSION": {
+      "VERSION_MANAGEMENT": "Version Management",
+      "SEARCH": "Search Version",
+      "ADD_NEW_VERSION": "ADD NEW VERSION",
+      "NAME": "Product Version Name",
+      "OPERATING_SYSTEM": "Operating System",
+      "OPERATING_SYSTEM_VERSION": "Operating System Version",
+      "ACTIONS": "Actions",
+      "EDIT": "Edit",
+      "DELETE_ERROR": "An error occurred while deleting a version!"
+    }
+  },
+  "INVITATION": {
+    "ACCOUNT_CREATION": "Account creation",
+    "SUCCESS_CREATION": "Account created successfully!",
+    "CREDENTIALS": "Credentials",
+    "FUNCTION_NAME_INPUT": "Function",
+    "FUNCTION_NAME_INPUT_PLACEHOLDER": "Your function",
+    "NAME_INPUT": "Your name",
+    "PERSONAL_INFO": "Personal info",
+    "SITE": "Site",
+    "USERNAME_INPUT": "Username (e-mail)",
+    "USERNAME_INPUT_PLACEHOLDER": "example@example.com",
+    "PASSWORD": "Password",
+    "PASSWORD_CONFIRM": "Confirm your password",
+    "TOKEN_INVALID": "Invalid Token"
+  },
+  "ACCESSIBILITY-BAR": {
+    "SHORTCUT_CONTAINER": "Shortcut List",
+    "SHORTCUT": "Accessibility shortcuts",
+    "MENU": "Menu",
+    "CONTENT": "Go to Content",
+    "LOGIN": "Login",
+    "LOGOUT": "Logout",
+    "CONTRAST": "Enable high contrast",
+    "LIBRAS": "Enable Libras",
+    "A+": "Increase Font",
+    "A-": "Decrease Font",
+    "A": "Restore Font",
+    "LANGUAGE": "Change Language"
+  },
+  "DATAGRID": {
+    "ROWS": "Rows per page:",
+    "DISPLAY": "Displaying page:",
+    "DATA_ERROR": "Unable to load data",
+    "NO_DATA": "No data registered",
+    "ACTIONS": "Actions"
+  },
+  "HOME-BAR": {
+    "HOME": "HOME",
+    "PRODUCTS": "PRODUCTS",
+    "MY_PRODUCTS": "My products",
+    "USERS": "USERS",
+    "CONTACT": "CONTACT US",
+    "HELP": "HELP"
+  },
+  "WELCOME": {
+    "TABS": {
+      "PLATFORM": "The Platform",
+      "ABOUT": "About Us"
+    },
+    "LOGIN": "LOGIN",
+    "WELCOME": "Welcome to the",
+    "LEAD": "Dell Research, Development and Innovation Center",
+    "CONTENT": {
+      "PLATFORM": "Dell created the Lead Solution Center, a worldwide distribution channel for assistive technologies originally developed for Dell Brazil by the Dell Research, Development and Innovation Center (Lead). Through the Lead Solution Center, representatives from Dell sites and factories around the world will be able to learn more about our ongoing projects, download and install software, make suggestions and get support. Our goal is to make Dell websites even more accessible and inclusive.",
+      "ABOUT": "Based on the idea of transforming lives through technology, Dell idealized the Dell Research, Development and Innovation Center (Lead). The Center was founded in Fortaleza, in 2011, through a partnership with large educational institutions in the state of Ceará. The Lead is maintained with resources from investments in Research and Development (R&D), in accordance with Law No. 8,248 / 91, popularly known as the Computer Law."
+    },
+    "SEE_MORE": "See More"
+  },
+  "PWD": "Lead Solution Center",
+  "ALL_RIGHTS": "2008 - 2021 Dell Inc. or its subsidiaries. All Rights Reserved.",
+  "LOGIN": {
+    "USERNAME": "Username",
+    "PASSWORD": "Password",
+    "NEW_PASSWORD": "New password",
+    "REMEMBER_ME": "Remember me",
+    "RECOVER_PASSWORD": "Recover Password",
+    "LOG_IN": "Log In",
+    "CANCEL": "Cancel",
+    "I_AGREE": "I Agree",
+    "DISAGREE": "Disagree",
+    "ERROR_MESSAGE": "The username or password you entered is incorrect. Please try again.",
+    "PASSWORD_RECOVERY": "Password Recovery",
+    "INFORM_EMAIL": "Inform your email to receive the password recovery link.",
+    "EMAIL": "Email",
+    "PLACEHOLDER_EMAIL": "example@domain.com",
+    "RECOVER": "Recover",
+    "INCORRECT_EMAIL": "The email you entered is incorrect. Please try again.",
+    "SUCCESS_REQUEST_RECOVERY": "Password recovery link sent to your email inbox.",
+    "ERROR_REQUEST_RECOVERY": "Recovery email cannot be sent!",
+    "INVALID_TOKEN": "Invalid token!",
+    "INVALID_PASSOWORD_FORMAT": "Invalid password format!",
+    "PASSWORD_CHANGED_SUCCESSFULLY": "Password changed successfully!",
+    "CHANGE": "Change"
+  },
+  "HOME": {
+    "BREADCRUMB": {
+      "HOME": "Home"
+    },
+    "MANAGER": {
+      "TITLE": "Available Products"
+    },
+    "ADMIN": {
+      "USER": {
+        "TITLE": "User Management",
+        "SUBTITLE": "Invite new users to register with the Lead Solution Center to access and use the solutions developed by Lead. In addition, you can manage your sent invitations, and users who already have a profile on the platform can also make use of this management.",
+        "BUTTON": "USERS"
+      },
+      "PRODUCT": {
+        "TITLE": "Product Management",
+        "SUBTITLE": "Upload and manage applications in the Lead Solution Center, making them available for users to install and deploy to their Dell factories/locations.",
+        "BUTTON": "PRODUCTS"
+      }
+    },
+    "QUICK_ACESS": "Quick Acess",
+    "USER_RECENTLY": "Users Recently Added",
+    "ADD_NEW_PRODUCT": "ADD NEW PRODUCT",
+    "INVITE_USERS": "INVITE USERS",
+    "SEE_MORE": "SEE MORE",
+    "TABLE_USERS": {
+      "EMAIL": "Email",
+      "ROLE": "Role",
+      "SITE": "Site",
+      "STATUS": "Status"
+    }
+  },
+  "ROLE": {
+    "SELECT": "Select a role"
+  },
+  "FACTORY": {
+    "SELECT": "Select a site"
+  },
+  "USER_DETAILS": {
+    "BREADCRUMB_USER_LIST": "Users",
+    "BREADCRUMB_USER_DETAILS": "User Details"
+  },
+  "USERS": {
+    "EMAILS_TIP": "Enter the emails separated by commas.",
+    "EMAILS": "Emails",
+    "SEND_INVITES": "Send Invites",
+    "ALL_USERS": "All Users",
+    "DELETE": "DELETE",
+    "EDIT_USER": "Edit User",
+    "INVITE": "Invite",
+    "INVITE_USER": "Invite Users",
+    "INVITE_USERS": "Invite Users",
+    "NEW_USER": "New User",
+    "ROLE": "Role",
+    "SEARCH": "SEARCH",
+    "SEND_ERROR": "There was an error sending the invitation!",
+    "SAVE_ERROR": "An error occurred while saving the user",
+    "SAVE_SUCCESS": "User updated successfully",
+    "SEND_SUCCESS": "Invitation was successfully sent!",
+    "SITE": "Site",
+    "USERS": "Users",
+    "EMAIL": "E-mail",
+    "STATUS": "Status",
+    "DELETE_TITLE": "Delete invitation",
+    "DELETE_CONTENT": "Are you sure you want to delete the invitation?",
+    "DELETE_ERROR": "There was an error deleting the invitation!",
+    "DELETE_SUCCESS": "Invitation was successfully delete!",
+    "SEND_STATUS": "Successfully sent {{success}}, with errors: {{errors}}"
+  },
+  "PROFILE": {
+    "BREADCRUMB": "Profile",
+    "CANCEL": "Cancel",
+    "CHANGE_PASSWORD": "Change Password",
+    "CHANGE_PHOTO": "Change Profile Photo",
+    "CREATE_AT": "User Since",
+    "CURRENT_PASSWORD": "Password",
+    "EDIT_PROFILE": "Edit Profile",
+    "EMAIL": "E-mail",
+    "ENTER_CURRENT_PASSWORD": "Enter your Password",
+    "ENTER_NEW_PASSWORD": "Enter the New Password",
+    "ENTER_PASSWORD_AGAIN": "Enter the Password Again",
+    "ENTER_EMAIL": "Enter your E-mail",
+    "ENTER_NAME": "Enter your name",
+    "ENTER_FUNCTION": "Enter your function",
+    "FUNCTION": "Function",
+    "NAME": "Name",
+    "NEW_PASSWORD": "New Password",
+    "RE_TYPE_PASSWORD": "Re-type New Password",
+    "SAVE": "Save",
+    "REMOVE": "Remove",
+    "SAVE_SUCCESS": "Profile updated successfully",
+    "SAVE_ERROR": "The profile could not be updated",
+    "PASSWORD_ERROR": "Error changing password or old password is incorrect",
+    "LANGUAGE": "Language",
+    "SELECT_LANGUAGE": "Select your language",
+    "CHANGE_PASSWORD_SUCCESS": "Password changed successfully!",
+    "CHANGE_PASSWORD_DESCRIPTION": "You will need to login again, now whit the new password."
+  },
+  "FORM": {
+    "REQUIRED": "This field is required",
+    "MIN": "At least {{value}} characters",
+    "EMAIL": "Must be an email",
+    "PASSWORD": "Must contain at least 8 characters,\n 1 uppercase letter, 1 lowercase letter,\n 1 numeral and 1 special character",
+    "CONFIRM_PASSWORD": "Password do not match"
+  },
+  "PAGINATOR": {
+    "ROWS_PER_PAGE": "Rows per page:",
+    "NEXT_PAGE": "Next page",
+    "PREVIOUS_PAGE": "Previous Page",
+    "DISPLAYING_PAGE": "Displaying page",
+    "OF": " of "
+  },
+  "ACTIONS": {
+    "YES": "Yes",
+    "NO": "No",
+    "OK": "Ok",
+    "CANCEL": "Cancel",
+    "CREATE": "Create",
+    "NEXT": "Next",
+    "SAVE": "Save",
+    "SEE_MORE": "See More",
+    "BACK": "Back",
+    "FINISH": "Finish",
+    "UPDATE": "Update",
+    "INSTALL": "Install"
+  },
+  "MODAL": {
+    "LOGOUT": "Log Out",
+    "LOGOUT_PLACEHOLDER": "\nAre you sure you want to log out?"
+  },
+  "ATTACHMENT": "Attachment",
+  "REMOVE_ATTACHMENT": "Remove Attachment",
+  "ATTACHMENT_PLACEHOLDER": "Select one or more attachments",
+  "HELP": "Help",
+  "EDIT_HELP": "Edit Help",
+  "HELP_SAVE_ERROR": "An error occurred while saving",
+  "HELP_SAVE_SUCCESS": "Help updated successfully",
+  "PORTUGUESE": "Portuguese",
+  "ENGLISH": "English",
+  "SHOW_PASSWORD": "Show or Hide Password",
+  "REMOVE_PRODUCT": "Remove product",
+  "en": "English",
+  "pt-BR": "Portuguese"
+}

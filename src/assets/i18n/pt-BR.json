@@ -1,0 +1,400 @@
+{
+  "SHARED": {
+    "CONFIRM_MODAL": {
+      "TITLE": "Confirme a exclusão",
+      "BODY": "Tem certeza de que deseja remover este item permanentemente?"
+    }
+  },
+  "TERMS_CREATE_FAILED": "Não foi possível criar o termo.",
+  "TERMS_FETCH_FAILED": "Não foi possível carregar o termo.",
+  "TERMS": {
+    "TITLE": "Termos gerais de uso",
+    "AGREE": "Aceito",
+    "DISAGREE": "Discordo",
+    "DISAGREE_DESCRIPTION": "Precisamos que os termos de uso sejam aceitos para acesso ao LEAD Solution Center. Gostaria de falar conosco a respeito dos termos de uso?",
+    "ERRORS": {
+      "ACCEPT": "Não foi possível aceitar o termo",
+      "GET": "Não foi possível acessar o termo"
+    },
+    "TERMS_OF_USE": "Termos de uso",
+    "STATUS": "Status",
+    "VERSION_DATE": "Data da Versão",
+    "ADD_NEW_TERMS_OF_USE": "Adicionar novos termos de uso",
+    "NEW_TERMS_OF_USE": "Novos Termos de Uso",
+    "STATUS_ACTIVE": "Ativo",
+    "STATUS_INACTIVE": "Inativo",
+    "EDIT_TERMS": "Editar Termos",
+    "UPDATE_TERMS_OF_USE": "Atualizar os Termos de Uso",
+    "TERMS_VERSION": "Termos de uso versão"
+  },
+  "CONTACT": {
+    "HELP": "Precisa de ajuda? Estamos aqui para ajudá-lo.",
+    "SUCCESS": "Mensagem enviada com sucesso",
+    "ERROR": "Ocorreu um erro ao enviar a mensagem",
+    "ERROR_ATTACHMENT": "Você só pode enviar 25 MB de anexo",
+    "BREADCRUMB": {
+      "CONTACT": "Fale conosco"
+    },
+    "SUBTITLE": "Você tem alguma sugestão ou algum problema com a plataforma ou algum de nossos produtos? Contate-Nos!",
+    "FORM": {
+      "NAME": "Nome",
+      "EMAIL": "E-mail",
+      "SUBJECT": "Assunto",
+      "MESSAGE": "Mensagem",
+      "PURPOSE": "Objetivo do Contato",
+      "PURPOSE_PLACEHOLDER": "Informe o objetivo do contato",
+      "PURPOSES": {
+        "PROBLEM": "Problemas no sistema",
+        "SUGGESTIONS": "Sugestões",
+        "REQUESTS": "Solicitações"
+      },
+      "ATTACHMENTS": "Anexos",
+      "SEND": "Enviar Mensagem"
+    }
+  },
+  "PRODUCT": {
+    "PRODUCTS": "Produtos",
+    "PRODUCT": "Produto",
+    "ALL_PRODUCTS": "Todos os Produtos",
+    "ADD_PRODUCT": "ADICIONAR NOVO PRODUTO",
+    "REGISTER_PRODUCT": "Registrar Produto",
+    "EDIT_PRODUCT": "Editar Produto",
+    "PRODUCT_INFORMATION": "Produto",
+    "PRODUCT_VERSION": "Versão",
+    "PRODUCT_TUTORIAL": "Informações do Tutorial",
+    "DESCRIPTION": "Descrição",
+    "GENERAL_INFORMATION": "Informação geral",
+    "RECOMMENDATIONS": "Recomendações",
+    "HOW_TO_USE": "Como usar",
+    "HOW_TO_USE_TITLE": "Você pode escrever um tutorial para o seu produto (esta etapa é opcional)",
+    "DELETE_PLACEHOLDER": "Você tem certeza que deseja deletar o produto?",
+    "ERROR": {
+      "DATA": "Não foi possível carregar os dados",
+      "DOWNLOAD": "Não foi possível baixar o arquivo",
+      "DELETE": "Não foi possível deletar o produto",
+      "AVATAR": "Não foi possível carregar a foto"
+    },
+    "SUCCESS": {
+      "DOWNLOAD": "Download feito com sucesso!"
+    },
+    "FORM": {
+      "PRODUCT_INFORMATION": "Cadastre as informações do produto",
+      "PRODUCT_VERSION": "Cadastre as informações do produto",
+      "DELETED_SUCCESS": "Produto deletado com sucesso!",
+      "SUCCESS": "Produto adicionado com sucesso!",
+      "EDIT_SUCCESS": "Produto editado com sucesso!",
+      "INVALID_LOGO_FORM": "Formato inválido! Sua imagem deve ser no formato jpeg, png, jpg, ico e svg",
+      "INVALID_FILE_FORM": "Formato inválido! O arquivo deve ser no formato zip, apk, exe, msi e xpi",
+      "ERROR": "Incapaz de adicionar produtos",
+      "DELETE_ERROR": "Incapaz de deletar produto"
+    },
+    "DETAILS": {
+      "INSTALLED": "Instalado",
+      "UPDATE": "Atualizar",
+      "INSTALL": "Instalar",
+      "DOWNLOAD": "Baixar",
+      "EDIT": "Editar",
+      "DELETE": "Deletar",
+      "CONTACT": "Fale conosco",
+      "PROBLEM": "Está tendo problemas com este produto?",
+      "UPLOAD": "Upload"
+    },
+    "INSTALLATION": {
+      "TITLE": "Instalação",
+      "FAILED": "Instalação com falha",
+      "STEP_1": {
+        "DESCRIPTION": "Para fazer a instalação direta, precisamos que configure seu aparelho:",
+        "LI_1": "Ativar o modo desenvolvedor no seu aparelho;",
+        "LI_2": "Ativar modo de depuração;",
+        "NEED_HELP": "Ajuda"
+      },
+      "STEP_2": {
+        "DESCRIPTION": "Conecte seu dispositivo via USB e não remova o cabo até a conclusão."
+      },
+      "STEP_3": {
+        "DESCRIPTION": "Verificando dispositivos ..."
+      },
+      "STEP_4": {
+        "DESCRIPTION": "Selecione seu dispositivo",
+        "NO_DEVICES_FOUND": "Nenhum dispositivo encontrado!"
+      },
+      "STEP_5": {
+        "DESCRIPTION": "Instalando...",
+        "WARNING": "Não desconecte seu dispositivo do USB"
+      },
+      "STEP_6": {
+        "DESCRIPTION": "Instalação Completa!",
+        "FAILED": "Ocorreu um erro durante a instalação em alguns dos dispositivos conectados. Por favor, tente novamente! Se o erro persistir, entre em contato conosco.",
+        "FAILED_ALL": "Ocorreu um erro durante a instalação. Por favor, tente novamente! Se o erro persistir, entre em contato conosco.",
+        "ERROR_REPORTING": "Relatório de erro:",
+        "DEVICE_UNAUTHOTHORIZED": "Dispositivo sem permissão",
+        "DEVICE_DISCONNECTED": "Dispositivo desconectado",
+        "ERROR_UNKNOWN": "Erro desconhecido"
+      }
+    },
+    "LIST": {
+      "UPDATE": "Última atualização",
+      "CREATE": "criado em ",
+      "ERROR": "Não foi possível carregar os produtos",
+      "IN-USE": "Produtos em uso",
+      "INSTALL": "Seus softwares instalados",
+      "EMPTY-STATE": "Sem produtos instalados",
+      "EMPTY-PRODUCTS": "Sem produtos cadastrados"
+    },
+
+    "LABEL": {
+      "VERSION_DATE": "Data da Versão",
+      "PRODUCT_FILE": "Arquivo do Produto",
+      "RECOMMENDATIONS": "Recomendações",
+      "GENERAL_INFORMATION": "Informação geral",
+      "HOW_TO_USE": "Tutorial",
+      "NAME": "Nome do Produto",
+      "LOGO": "Logo do Produto",
+      "DESCRIPTION": "Descrição do Produto",
+      "FILE": "Escolher arquivo"
+    },
+    "PLACEHOLDER": {
+      "NAME": "Insira o nome do produto",
+      "LOGO": "Selecione um arquivo",
+      "DESCRIPTION": "Descrição"
+    },
+    "MISSING_PRODUCT_FILE": "Arquivo de produto ausente",
+    "VERSION": {
+      "VERSION_MANAGEMENT": "Gerenciamento de versão",
+      "SEARCH": "Busca Versão",
+      "ADD_NEW_VERSION": "ADICIONE NOVA VERSÃO",
+      "NAME": "Nome da versão do produto",
+      "OPERATING_SYSTEM": "Sistema operacional",
+      "OPERATING_SYSTEM_VERSION": "Versão do sistema operacional",
+      "ACTIONS": "Ações",
+      "EDIT": "Editar",
+      "DELETE_ERROR": "Ocorreu um erro ao deletar a versão!"
+    }
+  },
+  "INVITATION": {
+    "ACCOUNT_CREATION": "Criação de conta",
+    "SUCCESS_CREATION": "Conta criada com sucesso!",
+    "CREDENTIALS": "Credenciais",
+    "FUNCTION_NAME_INPUT": "Função",
+    "FUNCTION_NAME_INPUT_PLACEHOLDER": "Sua função",
+    "NAME_INPUT": "Seu nome",
+    "PERSONAL_INFO": "Informação pessoal",
+    "SITE": "Local",
+    "USERNAME_INPUT": "Nome de usuário (e-mail)",
+    "USERNAME_INPUT_PLACEHOLDER": "examplo@examplo.com",
+    "PASSWORD": "Senha",
+    "PASSWORD_CONFIRM": "Confirme sua senha",
+    "TOKEN_INVALID": "Token Inválido"
+  },
+  "ACCESSIBILITY-BAR": {
+    "SHORTCUT_CONTAINER": "Lista de Atalhos",
+    "SHORTCUT": "Atalhos de acessibilidade",
+    "MENU": "Menu",
+    "CONTENT": "Ir para conteúdo",
+    "LOGIN": "Entrar",
+    "LOGOUT": "Sair",
+    "CONTRAST": "Habilitar o alto contraste",
+    "LIBRAS": "Habilitar Libras",
+    "A+": "Aumentar Fonte",
+    "A-": "Diminuir Fonte",
+    "A": "Restaurar Fonte",
+    "LANGUAGE": "Mudar Idioma"
+  },
+  "DATAGRID": {
+    "ROWS": "Linhas por página:",
+    "DISPLAY": "Exibindo página:",
+    "DATA_ERROR": "Não foi possível carregar os dados",
+    "NO_DATA": "Sem dados cadastrados",
+    "ACTIONS": "Ações"
+  },
+  "HOME-BAR": {
+    "HOME": "INÍCIO",
+    "PRODUCTS": "PRODUTOS",
+    "MY_PRODUCTS": "Meus produtos",
+    "USERS": "USUÁRIOS",
+    "CONTACT": "CONTATO",
+    "HELP": "AJUDA"
+  },
+  "WELCOME": {
+    "TABS": {
+      "PLATFORM": "A Plataforma",
+      "ABOUT": "Sobre Nós"
+    },
+    "LOGIN": "Entrar",
+    "WELCOME": "Bem-vindo ao",
+    "LEAD": "Centro de Pesquisa, Desenvolvimento e Inovação Dell",
+    "CONTENT": {
+      "PLATFORM": "A Dell criou o Lead Solution Center, um canal de distribuição mundial das tecnologias assistivas originalmente desenvolvidas para a Dell Brasil pelo Centro de Pesquisa, Desenvolvimento e Inovação Dell (Lead). Por meio do Lead Solution Center, representantes dos sites e das fábricas da Dell, em todo o mundo, poderão saber mais sobre os nossos projetos em andamento, fazer download e instalação de software, dar sugestões e obter suporte. Nosso objetivo é tornar os sites da Dell ainda mais acessíveis e inclusivos.",
+      "ABOUT": "A partir da ideia de transformar vidas por meio da tecnologia, a Dell idealizou o Centro de Pesquisa, Desenvolvimento e Inovação Dell (Lead). O Centro foi fundado em Fortaleza, em 2011, por meio de parceria com grandes instituições de ensino do estado do Ceará. O Lead é mantido com recursos de investimentos em Pesquisa e Desenvolvimento (P&D), conforme a Lei nº 8.248/91, popularmente conhecida como Lei de Informática."
+    },
+    "SEE_MORE": "Ver Mais"
+  },
+  "PWD": "Lead Solution Center",
+  "ALL_RIGHTS": "2008 - 2021 Dell Inc. ou suas subsidiárias. Todos os direitos reservados.",
+  "LOGIN": {
+    "USERNAME": "Usuário",
+    "NEW_PASSWORD": "Nova senha",
+    "PASSWORD": "Senha",
+    "REMEMBER_ME": "Lembre de mim",
+    "RECOVER_PASSWORD": "Recuperar senha",
+    "LOG_IN": "Entrar",
+    "CANCEL": "Cancelar",
+    "I_AGREE": "Concordo",
+    "DISAGREE": "Discordo",
+    "ERROR_MESSAGE": "O nome de usuário ou senha que você digitou está incorreto. Por favor, tente novamente.",
+    "PASSWORD_RECOVERY": "Recuperação de Senha",
+    "INFORM_EMAIL": "Informe seu e-mail para receber o link de recuperação de senha.",
+    "EMAIL": "E-mail",
+    "PLACEHOLDER_EMAIL": "exemplo@dominio.com",
+    "RECOVER": "Recuperar",
+    "INCORRECT_EMAIL": "O e-mail que você digitou está incorreto. Por favor, tente novamente.",
+    "SUCCESS_REQUEST_RECOVERY": "Link de recuperação de senha enviado para sua caixa de entrada de e-mail.",
+    "ERROR_REQUEST_RECOVERY": "Não possível enviar o email de recuperação!",
+    "INVALID_TOKEN": "Token invalido!",
+    "INVALID_PASSOWORD_FORMAT": "Formato da senha invalido!",
+    "PASSWORD_CHANGED_SUCCESSFULLY": "Senha alterada com sucesso!",
+    "CHANGE": "Alterar"
+  },
+  "HOME": {
+    "BREADCRUMB": {
+      "HOME": "Inicial"
+    },
+    "MANAGER": {
+      "TITLE": "Produtos Disponíveis"
+    },
+    "ADMIN": {
+      "USER": {
+        "TITLE": "Gerenciamento de usuários",
+        "SUBTITLE": "Convide novos usuários a se cadastrarem no Lead Solution Center para acessar e utilizar as soluções desenvolvidas pelo Lead. Além disso, você pode gerenciar seus convites enviados, e os usuários que já possuem um perfil na plataforma também podem fazer uso desse gerenciamento.",
+        "BUTTON": "Usuários"
+      },
+      "PRODUCT": {
+        "TITLE": "Gestão de produtos",
+        "SUBTITLE": "Faça upload e gerencie aplicativos no Lead Solution Center, disponibilizando-os para que os usuários o instalem e implantem em suas fábricas/locais da Dell.",
+        "BUTTON": "Produtos"
+      }
+    },
+    "QUICK_ACESS": "Acesso rápido",
+    "USER_RECENTLY": "Usuários adicionados recentemente",
+    "ADD_NEW_PRODUCT": "ADICIONE NOVO PRODUTO",
+    "INVITE_USERS": "CONVIDAR USUÁRIOS",
+    "SEE_MORE": "VER MAIS",
+    "TABLE_USERS": {
+      "EMAIL": "Email",
+      "ROLE": "Função",
+      "SITE": "Site",
+      "STATUS": "Status"
+    }
+  },
+  "ROLE": {
+    "SELECT": "Selecione uma função"
+  },
+  "FACTORY": {
+    "SELECT": "Selecione a local"
+  },
+  "USER_DETAILS": {
+    "BREADCRUMB_USER_LIST": "Usuários",
+    "BREADCRUMB_USER_DETAILS": "Detalhes do Usuário"
+  },
+  "USERS": {
+    "EMAILS_TIP": "Insira os e-mails separados por vírgulas.",
+    "EMAILS": "Emails",
+    "SEND_INVITES": "Enviar Convites",
+    "ALL_USERS": "Todos os usuários",
+    "DELETE": "Excluir",
+    "EDIT_USER": "Editar Usuário",
+    "INVITE": "Convite",
+    "INVITE_USER": "Convidar usuários",
+    "INVITE_USERS": "Convidar Usuários",
+    "NEW_USER": "Novo usuário",
+    "ROLE": "Papel",
+    "SEARCH": "Pesquisa",
+    "SEND_ERROR": "Ocorreu um erro ao enviar o convite!",
+    "SAVE_ERROR": "Ocorreu um erro ao salvar o usuário",
+    "SAVE_SUCCESS": "Usuário atualizado com sucesso",
+    "SEND_SUCCESS": "O Convite foi enviado com sucesso!",
+    "SITE": "Site",
+    "USERS": "Usuários",
+    "EMAIL": "E-mail",
+    "STATUS": "Status",
+    "DELETE_TITLE": "Deletar convite",
+    "DELETE_CONTENT": "Tem certeza que deseja deletar o convite?",
+    "DELETE_ERROR": "Ocorreu um erro ao deletar o convite!",
+    "DELETE_SUCCESS": "O Convite foi deletado com sucesso!",
+    "SEND_STATUS": "Foi enviado com sucesso {{success}}, com erros: {{errors}}"
+  },
+  "PROFILE": {
+    "BREADCRUMB": "Perfil",
+    "CANCEL": "Cancelar",
+    "CHANGE_PASSWORD": "Mudar Senha",
+    "CHANGE_PHOTO": "Alterar foto do perfil",
+    "CREATE_AT": "Usuário desde",
+    "CURRENT_PASSWORD": "Senha",
+    "EDIT_PROFILE": "Editar Perfil",
+    "EMAIL": "E-mail",
+    "ENTER_CURRENT_PASSWORD": "Digite sua senha",
+    "ENTER_EMAIL": "Digite seu E-mail",
+    "ENTER_FUNCTION": "Digite sua função",
+    "ENTER_NAME": "Digite seu nome",
+    "ENTER_NEW_PASSWORD": "Digite a nova senha",
+    "ENTER_PASSWORD_AGAIN": "Digite a senha novamente",
+    "FUNCTION": "Função",
+    "NAME": "Nome",
+    "NEW_PASSWORD": "Nova senha",
+    "REMOVE": "Remover",
+    "RE_TYPE_PASSWORD": "Digite novamente a nova senha",
+    "SAVE": "Salvar",
+    "SAVE_SUCCESS": "Perfil atualizado com sucesso",
+    "SAVE_ERROR": "Não foi possível atualizar o perfil",
+    "PASSWORD_ERROR": "Erro ao mudar senha ou senha antiga está incorreta",
+    "LANGUAGE": "Idioma",
+    "SELECT_LANGUAGE": "Selecione seu idioma",
+    "CHANGE_PASSWORD_SUCCESS": "Senha alterada com sucesso!",
+    "CHANGE_PASSWORD_DESCRIPTION": "Você precisará fazer login novamente, agora com a nova senha."
+  },
+  "FORM": {
+    "REQUIRED": "Este campo é obrigatório",
+    "MIN": "Pelo menos {{value}} carácteres",
+    "EMAIL": "Deve ser um email",
+    "PASSWORD": "Deve conter pelo menos 8 caracteres,\n 1 letra maiúscula, letra minúscula,\n 1 numeral e 1 caractere especial",
+    "CONFIRM_PASSWORD": "Senha não confere"
+  },
+  "PAGINATOR": {
+    "ROWS_PER_PAGE": "Linhas por página:",
+    "NEXT_PAGE": "Próxima página",
+    "PREVIOUS_PAGE": "Página anterior",
+    "DISPLAYING_PAGE": "Exibindo página",
+    "OF": " de "
+  },
+  "ACTIONS": {
+    "YES": "Sim",
+    "NO": "Não",
+    "OK": "Ok",
+    "CANCEL": "Cancelar",
+    "CREATE": "Criar",
+    "SAVE": "Salvar",
+    "NEXT": "Próximo",
+    "SEE_MORE": "Ver Mais",
+    "BACK": "Voltar",
+    "FINISH": "Finalizar",
+    "UPDATE": "Atualizar",
+    "INSTALL": "Instalar"
+  },
+  "MODAL": {
+    "LOGOUT": "Sair",
+    "LOGOUT_PLACEHOLDER": "Tem certeza que deseja sair?"
+  },
+  "ATTACHMENT": "Anexo",
+  "REMOVE_ATTACHMENT": "Remover anexo",
+  "ATTACHMENT_PLACEHOLDER": "Selecione um ou mais anexos",
+  "HELP": "Ajuda",
+  "EDIT_HELP": "Editar Ajuda",
+  "HELP_SAVE_ERROR": "Um erro ocorreu ao tentar salvar.",
+  "HELP_SAVE_SUCCESS": "Ajuda atualizada com sucesso!",
+  "PORTUGUESE": "Português",
+  "ENGLISH": "Inglês",
+  "SHOW_PASSWORD": "Exibir ou Esconder Senha",
+  "REMOVE_PRODUCT": "Remover produto",
+  "en": "Inglês",
+  "pt-BR": "Português"
+}

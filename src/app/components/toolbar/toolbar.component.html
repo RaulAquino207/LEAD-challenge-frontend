@@ -3,8 +3,7 @@
   <span> | </span>
   <span> Login</span>
 </div> -->
-
-
+<!--
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <a class="navbar-brand" >
     <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQGZ79TIPmjiAQ/company-logo_200_200/0/1612461485633?e=2159024400&v=beta&t=LRKNDaLkadYDJMHjlIKm1S4XYi6Xpkj-c4e0POJvZy8"
@@ -24,5 +23,130 @@
       </li>
     </ul>
   </div>
-</nav>
+</nav> -->
+
+<mat-sidenav-content>
+
+  <div class="dds__navbar dds__navbar-expand-lg home-bar">
+    <clr-modal [(clrModalOpen)]="modal">
+      <h3 class="modal-title dds__modal-title" tabindex="0">{{ 'MODAL.LOGOUT' | translate }}</h3>
+      <div class="modal-body">
+        <p tabindex="0">{{ 'MODAL.LOGOUT_PLACEHOLDER' | translate }}</p>
+      </div>
+      <div class="modal-footer">
+        <button (click)="modal = false" aria-pressed="false" class="dds__btn dds__btn-secondary dds__text-truncate"
+                id="logout__btn-cancel" role="button" tabindex="0" type="button">
+          {{ 'ACTIONS.CANCEL' | translate }}
+        </button>
+
+        <button (click)="modal = false; logout()" aria-pressed="false"
+                class="dds__btn dds__btn-primary dds__text-truncate" id="logout__btn-confirm" role="button"
+                tabindex="0"
+                type="button">
+          {{ 'ACTIONS.OK' | translate }}
+        </button>
+      </div>
+    </clr-modal>
+
+    <div class="dds__container">
+
+      <div class="dds__row dds__w-100">
+
+        <div class="dds__col-3 dds__col-md-6 dds__col-lg-9 dds__col-xl-3
+      dds__d-flex dds__justify-content-between dds__align-items-center logo__wrapper">
+
+          <button
+            (click)="sidenav.toggle()" aria-pressed="false"
+            class="pwd__menu-btn dds__btn dds__btn-icon dds__btn-primary" aria-label="Menu" role="button" tabindex="0"
+            type="button">
+            <span class="icon-dds__menu-closed"></span>
+          </button>
+
+          <img alt="Dell Lead Marca" class="pwd__brand-logo" src="../../../../assets/images/lead-white.png">
+
+          <img alt="Dell Lead Marca" class="pwd__brand-logo-small"
+               src="../../../../assets/images/dell-tech-vertical-lead-small.png">
+
+          <div class="navbar__separator"></div>
+
+          <span class="pwd__brand" tabindex="0">LSC</span>
+        </div>
+
+        <div
+          class="pwd__menu-container dds__col-md-5 dds__col-lg-1 dds__col-xl-6 dds__d-flex dds__align-items-center dds__h-100 dds__pl-0">
+          <ul class="home-bar__nav dds__h-100" role="list">
+            <li role="listitem">
+              <a class="navbar-anchor" id="home__btn" role="link" routerLink="/home" routerLinkActive="active"
+                 tabindex="0">
+                {{ 'HOME-BAR.HOME' | translate }}</a>
+            </li>
+            <li *appHasRole="'ADMIN'" role="listitem">
+              <a id="product__btn" role="link" routerLink="/product/list" routerLinkActive="active" tabindex="0">
+                {{ 'HOME-BAR.PRODUCTS' | translate }}</a>
+            </li>
+            <li *appHasRole="'MANAGER'" role="listitem">
+              <a id="my-product__btn" role="link" routerLink="/product/in-use" routerLinkActive="active" tabindex="0">
+                {{ 'HOME-BAR.MY_PRODUCTS' | translate }}</a>
+            </li>
+            <li *appHasRole="'ADMIN'" role="listitem">
+              <a id="user__btn" role="link" routerLink="/user" routerLinkActive="active" tabindex="0">
+                {{ 'HOME-BAR.USERS' | translate }}</a>
+            </li>
+            <li *appHasRole="'MANAGER'" role="listitem">
+              <a id="contact__btn" role="link" routerLink="/contact" routerLinkActive="active" tabindex="0">
+                {{'HOME-BAR.CONTACT' | translate}}
+              </a>
+            </li>
+            <li role="listitem"><a id="help__btn" routerLink="/help" routerLinkActive="active">
+              {{'HOME-BAR.HELP' | translate}}</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="dds__col-9 dds__col-md-6 dds__col-lg-3 dds__col-xl-3 profile__wrapper">
+          <div aria-label="Avatar Menu"  class="home-bar__profile dds__h-100">
+            <div class="user-info" tabindex="0">
+              <span tabindex="0">{{ profile?.name | name }}</span>
+              <span tabindex="0">{{ profile?.role?.name }}</span>
+            </div>
+            <div (click)="dropMenu.click()" class="avatar" role="button">
+              <img *ngIf="profile?.avatarImage; else fallback"
+                   [src]="domSanitization.bypassSecurityTrustUrl((profile$ | async).avatarImage)" alt="Avatar"
+                   role="img">
+              <ng-template #fallback="">
+                <span aria-label="Avatar" class="icon-dds__user" role="img"></span>
+              </ng-template>
+
+            </div>
+            <button #dropMenu [matMenuTriggerFor]="menu" aria-pressed="false"
+                    class="btn btn-link btn-icon-link btn-logout" id="logout__btn" role="button" tabindex="0"
+                    type="button">
+              <span class="icon-dds__arrow-tri-down"></span>
+            </button>
+            <mat-menu #menu="matMenu" class="drop-menu" xPosition="before">
+              <button [attr.aria-label]="'PROFILE.BREADCRUMB' | translate" aria-pressed="false" mat-menu-item
+                      role="button" routerLink="/profile" tabindex="0"
+                      type="button">{{ "PROFILE.BREADCRUMB" | translate }}</button>
+              <button *appHasRole="'ADMIN'" [attr.aria-label]="'TERMS.TERMS_OF_USE' | translate" aria-pressed="false"
+                      mat-menu-item role="button" routerLink="/terms-of-use/list" tabindex="0"
+                      type="button">{{ "TERMS.TERMS_OF_USE" | translate }}</button>
+              <button *appHasRole="'MANAGER'" [attr.aria-label]="'TERMS.TERMS_OF_USE' | translate"
+                      aria-pressed="false" mat-menu-item role="button" routerLink="/terms-of-use/details" tabindex="0"
+                      type="button">{{ "TERMS.TERMS_OF_USE" | translate }}</button>
+              <button (click)="modal = true" [attr.aria-label]="'MODAL.LOGOUT' | translate" aria-pressed="false"
+                      class="logout-btn" mat-menu-item role="button" tabindex="0"
+                      type="button">{{ "MODAL.LOGOUT" | translate }}</button>
+            </mat-menu>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container-router">
+    <router-outlet></router-outlet>
+  </div>
+</mat-sidenav-content>
+
 

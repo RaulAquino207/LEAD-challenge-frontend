@@ -1,17 +1,55 @@
-.footer {
+#footer {
   position: fixed;
   left: 0;
   bottom: 0;
   height: 5%;
   width: 100%;
   display:inline;
-  background-color: #1976d2;
-  color: white;
+  // background-color: #1976d2;
+  // color: white;
 }
 
-.bottomleft {
-  position: absolute;
-  bottom: 25%;
-  left: 1%;
+// .bottomleft {
+//   position: absolute;
+//   bottom: 25%;
+//   left: 1%;
+// }
+
+.app__footer {
+  background-color: var(--dell-midnight);
+  border-top: 2px solid var(--dell-midnight);
+  min-height: 80px;
+
+  p {
+    color: white;
+    font-size: 0.875em;
+    font-weight: 300;
+    margin: 0;
+
+    .footer__spotlight {
+      font-weight: 400;
+    }
+  }
+
+  .pwd__platform-brand {
+    border-left: 1px solid white;
+    color: white;
+    font-size: 1rem;
+    margin-left: 0.625rem;
+    padding-left: 0.625rem;
+    font-family: 'Metropolis', sans-serif;
+  }
+
+  .pwd__dell-brand {
+    height: 1.25rem;
+  }
+
+}
+
+:host-context(.high-contrast-theme) {
+  .app__footer {
+    background-color: var(--dell-black);
+    border-top: 2px solid var(--dell-white);
+  }
 }
 
