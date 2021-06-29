@@ -9,83 +9,25 @@
   <div class="nav_container" data-toggle="dds__msthd">
       <nav class="dds__navbar dds__msthd-navbar-top">
           <div class="dds__msthd-top dds__container dds__no-gutters">
-          <div class="dds__row dds__no-gutter dds__justify-content-flex-start" >
-              <div class="dds__msthd-top-ctnr">
-                      <a href="" tabindex="0" aria-label="Dell">
-                        <img src="../../../assets/images/lead-white.png" alt="" srcset="">
-                      </a>
-              </div>
-              <div class="dds__msthd-top-ctnr">
-                  <button class="dds__msthd-icon-ctnr" data-target="msthd-signin-ctnr" aria-label="Sign in" aria-haspopup="true" aria-expanded="false">
-                      <svg focusable="false">
-                          <use xlink:href="#dds__user"/>
-                      </svg>
-
-                      <span class="dds__msthd-label dds__text-truncate">Sign In</span>
-                  </button>
-                  <div id="msthd-signin-ctnr" class="dds__msthd-ctnr dds__pb-0" role="menu">
-                      <div class="dds__col-sm-12 dds__col-md-12 dds__col-lg-12">
-                      My Account Area
-                      </div>
-                  </div>
-                  <div id="msthd-signout-ctnr" class="dds__msthd-ctnr" role="menu">
-                      <div class="dds__col-sm-12 dds__col-md-12 dds__col-lg-12">
-                          Sign Out
-                      </div>
-                  </div>
-              </div>
-              <div class="dds__msthd-top-ctnr">
-                  <button class="dds__msthd-icon-ctnr" data-target="msthd-cart-ctnr" aria-label="Cart" aria-haspopup="true" aria-expanded="false">
-                      <svg focusable="false">
-                          <use xlink:href="#dds__cart"/>
-                      </svg>
-                      <span class="dds__badge dds__badge-dark" hidden>
-                      <i class="dds__icons dds__badge-dark"></i>
-                      </span>
-                      <span class="dds__msthd-label dds__text-truncate">Cart</span>
-                  </button>
-                  <div id="msthd-cart-ctnr" class="dds__msthd-ctnr" role="menu">
-                      <div class="dds__col-sm-12 dds__col-md-12 dds__col-lg-12">
-                      Cart Area
-                      </div>
-                  </div>
-              </div>
-              <div class="dds__msthd-top-ctnr dds__msthd-hidden">
-                  <button class="dds__msthd-icon-ctnr" data-toggle="dds__msthd-offcanvas" data-target="msthd-off-canvas-menu" aria-label="Menu" aria-haspopup="true" aria-expanded="false">
-                      <svg focusable="false">
-                          <use xlink:href="#dds__menu-closed"/>
-                      </svg>
-                      <span class="dds__msthd-label dds__text-truncate">Menu</span>
-                  </button>
-                  <aside id="msthd-off-canvas-menu" class="dds__msthd-offcanvas-menu" hidden>
-                      <ul role="menu">
-                          <li class="dds__msthd-offcanvas-tier-1" role="menuitem">
-                              <button class="dds__msthd-offcanvas-nav-item dds__collapsed" data-toggle="dds__collapse" data-target="#item1-tier1" aria-expanded="false">Components
-                                  <svg class="dds__arrow-tri-solid-right" aria-hidden="true" focusable="false">
-                                      <use xlink:href="#dds__arrow-tri-solid-right"></use>
-                                  </svg>
-                              </button>
-                              <ul id="item1-tier1" class="dds__collapse" role="menu">
-                                  <li class="dds__msthd-offcanvas-tier-2" role="menuitem"><a class="dds__msthd-offcanvas-nav-item" href="viewAll" >View All</a></li>
-                              </ul>
-                          </li>
-                          <li class="dds__msthd-offcanvas-tier-1" role="menuitem">
-                              <button class="dds__msthd-offcanvas-nav-item dds__collapsed" data-toggle="dds__collapse" data-target="#products" aria-expanded="false">Products
-                                  <svg class="dds__arrow-tri-solid-right" aria-hidden="true" focusable="false">
-                                      <use xlink:href="#dds__arrow-tri-solid-right"></use>
-                                  </svg>
-                              </button>
-                              <ul id="products" class="dds__collapse" role="menu">
-                                  <li class="dds__msthd-offcanvas-tier-2" role="menuitem"><a class="dds__msthd-offcanvas-nav-item" href="#">Enterprise</a></li>
-                              </ul>
-                          </li>
-                      </ul>
-                  </aside>
-              </div>
-          </div>
+            <div class="dds__row dds__no-gutter dds__justify-content-flex-start" >
+                <div class="dds__msthd-top-ctnr">
+                        <a  tabindex="0" aria-label="Dell">
+                          <img src="../../../assets/images/lead-white.png" alt="">
+                        </a>
+                </div>
+                <div class="dds__msthd-top-ctnr">
+                    <button class="dds__msthd-icon-ctnr" data-target="msthd-signin-ctnr" [routerLink]="['fake-in']" aria-label="Sign in" aria-haspopup="true" aria-expanded="false">
+                        <span class="dds__msthd-label dds__text-truncate">Login</span>
+                      </button>
+                </div>
+                <div class="dds__msthd-top-ctnr">
+                    <button class="dds__msthd-icon-ctnr" data-target="msthd-cart-ctnr" [routerLink]="['registration']" aria-label="Cart" aria-haspopup="true" aria-expanded="false">
+                        <span class="dds__msthd-label dds__text-truncate">Cadastrar</span>
+                    </button>
+                </div>
+            </div>
           </div>
       </nav>
-      <div id="dds__msthd-overlay" class="dds__msthd-overlay"></div>
   </div>
 
 </header>
