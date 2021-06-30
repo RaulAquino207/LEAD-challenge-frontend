@@ -20,8 +20,12 @@ export class DoughnutChartComponent implements OnInit {
   public doughnutChartData: MultiDataSet = [];
   public doughnutChartType: ChartType = 'doughnut';
   public doughnutChartColors: Array<any> = [];
+  public doughnutChartOptions: ChartOptions = {
+    responsive: true,
+    legend: { position: 'bottom'},
+  };
   public doughnutChartPlugins: PluginServiceGlobalRegistrationAndOptions[] = [{
-    afterDraw(chart) {
+    beforeDraw(chart) {
       const ctx = chart.ctx;
 
       var nps_value : any;

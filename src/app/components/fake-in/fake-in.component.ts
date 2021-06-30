@@ -10,6 +10,7 @@ import { FormServiceService } from '../../services/form-service.service';
 export class FakeInComponent{
 
   email! : string;
+  password! : string;
 
   constructor(private service : FormServiceService, private router : Router) { }
 
