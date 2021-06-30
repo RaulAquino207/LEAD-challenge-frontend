@@ -1,5 +1,5 @@
 #content {
-  display: flex;
+  display: block;
   margin: 82px auto 32px;
   padding: 0 16px;
   max-width: 960px;
@@ -16,15 +16,16 @@
     // text-transform: capitalize;
     color: #125699;
     align-items: center;
-    display: flex;
+    display: block;
     flex-direction: column;
+    text-align: center;
   }
 }
   .form-field {
-    width: 300px;
+    width: 400px;
     margin-top: 15px;
     margin-bottom: 15px;
-    display: flex;
+    display: block;
     flex-direction: column;
     color: #125699;
 

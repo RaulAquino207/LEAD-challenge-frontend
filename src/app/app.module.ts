@@ -16,6 +16,7 @@ import { BarChartComponent } from './components/bar-chart/bar-chart.component';
 import { DashboardPageComponent } from './components/dashboard-page/dashboard-page.component';
 import { DoughnutChartComponent } from './components/doughnut-chart/doughnut-chart.component';
 import { RegistrationComponent } from './components/registration/registration.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { RegistrationComponent } from './components/registration/registration.co
     DashboardPageComponent,
     DoughnutChartComponent,
     RegistrationComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
