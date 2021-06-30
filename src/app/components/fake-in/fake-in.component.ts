@@ -14,28 +14,34 @@ export class FakeInComponent{
 
   constructor(private service : FormServiceService, private router : Router) { }
 
-  emailSubmit(){
-    console.log(this.email);
-
-    this.service.verify_email(this.email).subscribe((result) => {
-      console.log('result', result);
-      const { status, user } = result;
-
-      if(user.tag == 'admin'){
-        console.log('entrou nesse IF');
-        this.router.navigate(['dashboard']);
-      }
-      if(status == false){
-        this.router.navigate(['already-answered']);
-      } else {
-        if (user.status == true){
-          this.router.navigate(['already-answered']);
-        }
-      }
-    })
+  loginSubmit(){
 
 
-    this.router.navigate(['nps'], {queryParams : {'email' : this.email}});
+      this.service.login(this.email, this.password).subscribe((result) => {
+        const {access_token } = result;
+          console.log('access_token', access_token);
+          localStorage.setItem("token", access_token);
+      })
+
+    // this.service.verify_email(this.email).subscribe((result) => {
+    //   console.log('result', result);
+    //   const { status, user } = result;
+
+    //   if(user.tag == 'admin'){
+    //     console.log('entrou nesse IF');
+    //     this.router.navigate(['dashboard']);
+    //   }
+    //   if(status == false){
+    //     this.router.navigate(['already-answered']);
+    //   } else {
+    //     if (user.status == true){
+    //       this.router.navigate(['already-answered']);
+    //     }
+    //   }
+    // })
+
+
+    // this.router.navigate(['nps'], {queryParams : {'email' : this.email}});
   }
 
 }

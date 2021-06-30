@@ -20,9 +20,9 @@ export class FormServiceService {
     return this.httpClient.get<Result>(`${this.url}/user/email/${email}`);
   }
 
-  // verify_password(password : string) : Observable<Result> {
-  //   return this.httpClient.get<Result>(`${this.url}/user/password/${password}`);
-  // }
+  login(email : string, password : string) : Observable<any> {
+    return this.httpClient.post<any>(`${this.url}/user/auth/login`, {email : email, password : password});;
+  }
 
   infos_nps(){
     return this.httpClient.get(`${this.url}/user/list/descriptions`);
