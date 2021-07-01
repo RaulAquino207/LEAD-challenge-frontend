@@ -10,6 +10,6 @@ export class AlreadyAnsweredComponent{
 
   constructor(private router : Router) { }
   onClick(){
-    this.router.navigateByUrl('fake-in');
+    this.router.navigateByUrl('home');
   }
 }

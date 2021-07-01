@@ -13,11 +13,24 @@ export class FormServiceService {
   constructor(private httpClient : HttpClient) {}
 
   add_vote(id : string, value : Vote) : Observable<Vote>{
-    return this.httpClient.put<Vote>(`${this.url}/user/${id}`, value);
+    const token = this.getToken();
+    const headers = {
+      Authorization : `Bearer ${token}`
+    }
+    return this.httpClient.put<Vote>(`${this.url}/user/${id}`, value, {
+      headers,
+    });
   }
 
   verify_email(email : string) : Observable<Result> {
-    return this.httpClient.get<Result>(`${this.url}/user/email/${email}`);
+    const token = this.getToken();
+
+    const headers = {
+      Authorization : `Bearer ${token}`
+    }
+    return this.httpClient.get<Result>(`${this.url}/user/email/${email}`, {
+      headers
+    });
   }
 
   login(email : string, password : string) : Observable<any> {
@@ -25,7 +38,20 @@ export class FormServiceService {
   }
 
   infos_nps(){
-    return this.httpClient.get(`${this.url}/user/list/descriptions`);
+    const token = this.getToken();
+
+    const headers = {
+      Authorization : `Bearer ${token}`
+    }
+
+    return this.httpClient.get(`${this.url}/user/list/descriptions`, {
+      headers
+    });
+  }
+
+  getToken(){
+    const token = localStorage.getItem("token");
+    return token
   }
 
 }
