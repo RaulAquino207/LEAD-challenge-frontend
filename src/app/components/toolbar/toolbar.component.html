@@ -1,35 +1,35 @@
-<!-- <div class="toolbar" role="banner">
-  <span class="spam">Lead Promoter Score  </span>
-  <span> | </span>
-  <span> Login</span>
-</div> -->
-
 <header>
 
   <div class="nav_container" data-toggle="dds__msthd">
       <nav class="dds__navbar dds__msthd-navbar-top">
           <div class="dds__msthd-top dds__container dds__no-gutters">
-            <div class="dds__row dds__no-gutter dds__justify-content-flex-start" >
+            <div class="dds__row dds__no-gutter dds__justify-content-flex-start dds__align-content-center" >
+
                 <div class="dds__msthd-top-ctnr">
-                        <a  tabindex="0" aria-label="Dell">
-                          <img src="../../../assets/images/lead-white.png" alt="">
-                        </a>
+                  <a  tabindex="0" aria-label="Dell">
+                    <img src="../../../assets/images/lead-white.png" alt="">
+                  </a>
                 </div>
+
                 <div class="dds__msthd-top-ctnr">
-                  <button class="dds__msthd-icon-ctnr"  [routerLink]="['home']" >
+                  <button class="dds__msthd-icon-ctnr" routerLink="home" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}" >
                     <span class="dds__msthd-label dds__text-truncate">Home</span>
                   </button>
-              </div>
-                <div class="dds__msthd-top-ctnr">
-                    <button class="dds__msthd-icon-ctnr"  [routerLink]="['login']" >
-                      <span class="dds__msthd-label dds__text-truncate">Login</span>
-                    </button>
                 </div>
-                <div class="dds__msthd-top-ctnr">
-                    <button class="dds__msthd-icon-ctnr"  [routerLink]="['registration']" >
-                        <span class="dds__msthd-label dds__text-truncate">Cadastrar</span>
-                    </button>
+
+                <div *ngIf="homeRoute !== currentRoute || registrationRoute === currentRoute" class="dds__msthd-top-ctnr" >
+                  <button class="dds__msthd-icon-ctnr"  routerLink="login" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">
+                    <span class="dds__msthd-label dds__text-truncate">Login</span>
+                  </button>
                 </div>
+
+                <div *ngIf="homeRoute !== currentRoute || loginRoute === currentRoute" class="dds__msthd-top-ctnr">
+                  <button class="dds__msthd-icon-ctnr"  [routerLink]="['registration']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">
+                      <span class="dds__msthd-label dds__text-truncate">Cadastrar</span>
+                  </button>
+                </div>
+
+
             </div>
           </div>
       </nav>
