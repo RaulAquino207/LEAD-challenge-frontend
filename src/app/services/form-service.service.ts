@@ -33,8 +33,12 @@ export class FormServiceService {
     });
   }
 
+  createUser(email : string, name : string, password : string, confirmation_password : string){
+    return this.httpClient.post<any>(`${this.url}/user/register`, {email : email, name : name, password : password, confirmation_password : confirmation_password});
+  }
+
   login(email : string, password : string) : Observable<any> {
-    return this.httpClient.post<any>(`${this.url}/user/auth/login`, {email : email, password : password});;
+    return this.httpClient.post<any>(`${this.url}/user/auth/login`, {email : email, password : password});
   }
 
   infos_nps(){
