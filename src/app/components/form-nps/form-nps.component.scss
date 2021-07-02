@@ -76,6 +76,7 @@
     align-items: center;
     transition: all 0.2s ease-in-out;
     line-height: 24px;
+    cursor: pointer;
   }
 
   #card-container .card:not(:last-child) {
@@ -131,10 +132,10 @@
   flex-direction: row;
 }
 
-#btn-change {
-  border-color: #1976d2;
-  border-width: 4px;
-  background-color: white;
+.btn-change {
+  border-color: #1976d2 !important;
+  border-width: 4px !important;
+  background-color: white !important;
 }
 
 #button-wrapper {
